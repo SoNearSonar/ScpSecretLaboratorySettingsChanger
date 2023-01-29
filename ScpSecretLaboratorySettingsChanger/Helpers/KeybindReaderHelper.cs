@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ScpSecretLaboratorySettingsChanger.Helpers
+﻿namespace ScpSecretLaboratorySettingsChanger.Helpers
 {
-    internal class KeybindReaderHelper
+    public static class KeybindReaderHelper
     {
+        public static Dictionary<string, object> Keybinds = new Dictionary<string, object>();
+        public static string FileLocation = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "SCP Secret Laboratory", "keybinding.txt");
+
+        public static void RealAllKeybinds()
+        {
+            string[] keybindCombos = File.ReadAllText(FileLocation).Split(';');
+            foreach (string keyCombo in keybindCombos)
+            {
+                string[] keyInput = keyCombo.Split(':');
+                Keybinds.Add(keyInput[0], keyInput[1]);
+            }
+        }
     }
 }

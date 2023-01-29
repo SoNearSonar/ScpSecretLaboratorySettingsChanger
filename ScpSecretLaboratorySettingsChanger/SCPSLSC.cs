@@ -18,6 +18,7 @@ namespace ScpSecretLaboratorySettingsChanger
             CHK_VSync_CheckedChanged(sender, e);
             CHK_RenderLights_CheckedChanged(sender, e);
             RegistryReaderHelper.ReadAllRegistryKeys();
+            KeybindReaderHelper.RealAllKeybinds();
             LoadSettings();
         }
 
@@ -39,7 +40,10 @@ namespace ScpSecretLaboratorySettingsChanger
 
         private void SCPSLSC_FormClosing(object sender, FormClosingEventArgs e)
         {
-            SaveSettings();
+            Properties.Settings.Default.MainTabIndex = TCTRL_Settings.SelectedIndex;
+            Properties.Settings.Default.GameTabIndex =TCTRL_GameSettings.SelectedIndex;
+            Properties.Settings.Default.ControlsTabIndex = TCTRL_Controls.SelectedIndex;
+            Properties.Settings.Default.Save();
         }
 
         private void BTN_SaveSettings_Click(object sender, EventArgs e)
@@ -102,6 +106,11 @@ namespace ScpSecretLaboratorySettingsChanger
 
         private void LoadSettings()
         {
+            // Windows Form
+            TCTRL_Settings.SelectedIndex = Properties.Settings.Default.MainTabIndex;
+            TCTRL_GameSettings.SelectedIndex = Properties.Settings.Default.GameTabIndex;
+            TCTRL_Controls.SelectedIndex = Properties.Settings.Default.ControlsTabIndex;
+
             // Video
             CBX_GraphicsAPI.SelectedIndex = RegistryReaderHelper.ReadRegistryKeyValue<int>("07graphics_api::-%(|::");
             CBX_ScreenResolution.SelectedIndex = RegistryReaderHelper.ReadRegistryKeyValue<int>("07SavedResolutionSet::-%(|::");
@@ -131,6 +140,8 @@ namespace ScpSecretLaboratorySettingsChanger
             CBX_MenuTheme.SelectedIndex = RegistryReaderHelper.ReadRegistryKeyValue<int>("07MenuTheme::-%(|::");
             CBX_InputDevice.SelectedIndex = RegistryReaderHelper.ReadRegistryKeyValue<int>("13VcMicName::-%(|::");
 
+            // Controls
+
             // Gameplay
             CHK_FastIntroFade.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00ClassIntroFastFade::-%(|::");
             CHK_HeadBob.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00HeadBob::-%(|::");
@@ -151,11 +162,6 @@ namespace ScpSecretLaboratorySettingsChanger
             CHK_DisplaySteamProfile.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00DisplaySteamProfile::-%(|::");
             CHK_DoNotTrack.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00DNT::-%(|::");
             CHK_FlashTaskbar.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00ToggleTaskbarFlash::-%(|::");
-        }
-
-        private void SaveSettings()
-        {
-
         }
 
         private void CHK_VSync_CheckedChanged(object sender, EventArgs e)

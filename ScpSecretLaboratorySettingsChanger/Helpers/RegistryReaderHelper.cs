@@ -31,7 +31,7 @@ namespace ScpSecretLaboratorySettingsChanger.Helpers
             int index = 0;
             foreach (KeyValuePair<string, object> pair in RegistryKeys)
             {
-                keys[index] = pair.Key + pair.Value.ToString();
+                keys[index] = pair.Key + pair.Value;
                 index++;
             }
             File.WriteAllLines(FileLocation, keys);
