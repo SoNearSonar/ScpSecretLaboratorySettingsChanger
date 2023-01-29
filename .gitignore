@@ -1,0 +1,14 @@
+
+.vs/ProjectEvaluation/
+
+.vs/ScpSecretLaboratorySettingsChanger/DesignTimeBuild/
+
+.vs/ScpSecretLaboratorySettingsChanger/FileContentIndex/
+
+.vs/*
+
+ScpSecretLaboratorySettingsChanger/bin/Debug/net6.0-windows/
+
+ScpSecretLaboratorySettingsChanger/obj/Debug/net6.0-windows/
+
+ScpSecretLaboratorySettingsChanger/obj/
