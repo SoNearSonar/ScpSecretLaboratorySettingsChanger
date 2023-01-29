@@ -53,14 +53,14 @@ namespace ScpSecretLaboratorySettingsChanger
             RegistryReaderHelper.SaveRegistryKeyValue("07gfxsets_textures::-%(|::", CBX_TextureQuality.SelectedIndex);
             RegistryReaderHelper.SaveRegistryKeyValue("07gfxsets_aa::-%(|::", CBX_AntiAliasing.SelectedIndex);
             RegistryReaderHelper.SaveRegistryKeyValue("07gfxsets_ao::-%(|::", CBX_AmbientOcclusion.SelectedIndex);
-            RegistryReaderHelper.SaveRegistryKeyValue("00gfxsets_decals::-%(|::", CHK_Decals.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00gfxsets_RenderLight::-%(|::", CHK_RenderLights.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00gfxsets_shadows::-%(|::", CHK_Shadows.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00gfxsets_decals::-%(|::", CHK_Decals.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00gfxsets_RenderLight::-%(|::", CHK_RenderLights.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00gfxsets_shadows::-%(|::", CHK_Shadows.Checked);
             RegistryReaderHelper.SaveRegistryKeyValue("07gfxsets_shadres::-%(|::", CBX_ShadowResolution.SelectedIndex);
             RegistryReaderHelper.SaveRegistryKeyValue("07gfxsets_shaddis_new::-%(|::", CBX_ShadowDistance.SelectedIndex);
             RegistryReaderHelper.SaveRegistryKeyValue("07Volumetrics::-%(|::", CBX_VolumetricLights.SelectedIndex);
             RegistryReaderHelper.SaveRegistryKeyValue("07gfxsets_mb::-%(|::", NUD_MotionBlur.Value);
-            RegistryReaderHelper.SaveRegistryKeyValue("00gfxsets_bloom::-%(|::", CHK_Bloom.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00gfxsets_bloom::-%(|::", CHK_Bloom.Checked);
 
             // Audio
             RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_Master::-%(|::", TBR_MasterVolume.Value * 0.01);
@@ -69,32 +69,33 @@ namespace ScpSecretLaboratorySettingsChanger
             RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_VoiceChat::-%(|::", TBR_MenuMusicVolume.Value * 0.01);
             RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_Interface::-%(|::", TBR_InterfaceVolume.Value * 0.01);
             RegistryReaderHelper.SaveRegistryKeyValue("13VcMicName::-%(|::", CBX_InputDevice.SelectedIndex == 0 ? string.Empty : CBX_InputDevice.Text);
-            RegistryReaderHelper.SaveRegistryKeyValue("00VcNoiseRed::-%(|::", CHK_EnableNoiseReduction.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00VcNoiseRed::-%(|::", CHK_EnableNoiseReduction.Checked);
             RegistryReaderHelper.SaveRegistryKeyValue("07MenuTheme::-%(|::", CBX_MenuTheme.SelectedIndex);
-            RegistryReaderHelper.SaveRegistryKeyValue("00mute_spectators::-%(|::", CHK_MuteSpectators.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00mute_spectators::-%(|::", CHK_MuteSpectators.Checked);
 
             // Controls
 
             // Gameplay
-            RegistryReaderHelper.SaveRegistryKeyValue("00ClassIntroFastFade::-%(|::", CHK_FastIntroFade.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00HeadBob::-%(|::", CHK_HeadBob.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00ToggleSprint::-%(|::", CHK_ToggleSprint.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00HealthBarShowsExact::-%(|::", CHK_DisplayExactHP.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00RichPresence::-%(|::", CHK_RichPresence.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00PublicLobby::-%(|::", CHK_PublicLobby.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00HideIP::-%(|::", CHK_HideIPAddress.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00ToggleSearch::-%(|::", CHK_ToggleSearch.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00ModeSwitchSetting079::-%(|::", CHK_Scp079ToggleView.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00PostProcessing079::-%(|::", CHK_Scp079PostProcessing.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00Subtitles::-%(|::", CHK_Subtitles.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00DarkMode::-%(|::", CHK_DarkMode.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00ClassIntroFastFade::-%(|::", CHK_FastIntroFade.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00HeadBob::-%(|::", CHK_HeadBob.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00ToggleSprint::-%(|::", CHK_ToggleSprint.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00HealthBarShowsExact::-%(|::", CHK_DisplayExactHP.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00RichPresence::-%(|::", CHK_RichPresence.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00PublicLobby::-%(|::", CHK_PublicLobby.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00HideIP::-%(|::", CHK_HideIPAddress.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00ToggleSearch::-%(|::", CHK_ToggleSearch.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00ModeSwitchSetting079::-%(|::", CHK_Scp079ToggleView.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00PostProcessing079::-%(|::", CHK_Scp079PostProcessing.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00Subtitles::-%(|::", CHK_Subtitles.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00DarkMode::-%(|::", CHK_DarkMode.Checked);
             RegistryReaderHelper.SaveRegistryKeyValue("07ragdoll_cleanup::-%(|::", TBR_RagdollCleanupTime.Value);
 
             // Other
             RegistryReaderHelper.SaveRegistryKeyValue("13translation_path::-%(|::", Translations.GetTranslationValue(CBX_Language.SelectedIndex));
-            RegistryReaderHelper.SaveRegistryKeyValue("00DisplaySteamProfile::-%(|::", CHK_DisplaySteamProfile.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00DNT::-%(|::", CHK_DoNotTrack.Checked);
-            RegistryReaderHelper.SaveRegistryKeyValue("00ToggleTaskbarFlash::-%(|::", CHK_FlashTaskbar.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00translation_changed::-%(|::", CBX_Language.SelectedIndex != 6 ? true : false);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00DisplaySteamProfile::-%(|::", CHK_DisplaySteamProfile.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00DNT::-%(|::", CHK_DoNotTrack.Checked);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00ToggleTaskbarFlash::-%(|::", CHK_FlashTaskbar.Checked);
 
             RegistryReaderHelper.WriteAllRegistryKeys();
         }

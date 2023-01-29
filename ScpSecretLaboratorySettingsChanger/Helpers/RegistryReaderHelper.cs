@@ -31,7 +31,7 @@ namespace ScpSecretLaboratorySettingsChanger.Helpers
             int index = 0;
             foreach (KeyValuePair<string, object> pair in RegistryKeys)
             {
-                keys[index] = pair.Key + pair.Value;
+                keys[index] = pair.Key + pair.Value.ToString();
                 index++;
             }
             File.WriteAllLines(FileLocation, keys);
@@ -46,6 +46,18 @@ namespace ScpSecretLaboratorySettingsChanger.Helpers
             else
             {
                 RegistryKeys.Add(key, value);
+            }
+        }
+
+        public static void SaveRegistryKeyWithLowercaseValue(string key, object value)
+        {
+            if (RegistryKeys.ContainsKey(key))
+            {
+                RegistryKeys[key] = value.ToString().ToLowerInvariant();
+            }
+            else
+            {
+                RegistryKeys.Add(key, value.ToString().ToLowerInvariant());
             }
         }
 
