@@ -1075,7 +1075,7 @@
             // CHK_FlashTaskbar
             // 
             this.CHK_FlashTaskbar.AutoSize = true;
-            this.CHK_FlashTaskbar.Location = new System.Drawing.Point(333, 189);
+            this.CHK_FlashTaskbar.Location = new System.Drawing.Point(325, 193);
             this.CHK_FlashTaskbar.Name = "CHK_FlashTaskbar";
             this.CHK_FlashTaskbar.Size = new System.Drawing.Size(66, 19);
             this.CHK_FlashTaskbar.TabIndex = 38;
@@ -1085,7 +1085,7 @@
             // LBL_FlashTaskbar
             // 
             this.LBL_FlashTaskbar.AutoSize = true;
-            this.LBL_FlashTaskbar.Location = new System.Drawing.Point(187, 192);
+            this.LBL_FlashTaskbar.Location = new System.Drawing.Point(132, 197);
             this.LBL_FlashTaskbar.Name = "LBL_FlashTaskbar";
             this.LBL_FlashTaskbar.Size = new System.Drawing.Size(136, 15);
             this.LBL_FlashTaskbar.TabIndex = 37;
@@ -1094,7 +1094,7 @@
             // CHK_DoNotTrack
             // 
             this.CHK_DoNotTrack.AutoSize = true;
-            this.CHK_DoNotTrack.Location = new System.Drawing.Point(333, 141);
+            this.CHK_DoNotTrack.Location = new System.Drawing.Point(325, 145);
             this.CHK_DoNotTrack.Name = "CHK_DoNotTrack";
             this.CHK_DoNotTrack.Size = new System.Drawing.Size(66, 19);
             this.CHK_DoNotTrack.TabIndex = 36;
@@ -1104,7 +1104,7 @@
             // LBL_DoNotTrack
             // 
             this.LBL_DoNotTrack.AutoSize = true;
-            this.LBL_DoNotTrack.Location = new System.Drawing.Point(187, 144);
+            this.LBL_DoNotTrack.Location = new System.Drawing.Point(132, 149);
             this.LBL_DoNotTrack.Name = "LBL_DoNotTrack";
             this.LBL_DoNotTrack.Size = new System.Drawing.Size(111, 15);
             this.LBL_DoNotTrack.TabIndex = 35;
@@ -1113,7 +1113,7 @@
             // CHK_DisplaySteamProfile
             // 
             this.CHK_DisplaySteamProfile.AutoSize = true;
-            this.CHK_DisplaySteamProfile.Location = new System.Drawing.Point(333, 93);
+            this.CHK_DisplaySteamProfile.Location = new System.Drawing.Point(325, 97);
             this.CHK_DisplaySteamProfile.Name = "CHK_DisplaySteamProfile";
             this.CHK_DisplaySteamProfile.Size = new System.Drawing.Size(66, 19);
             this.CHK_DisplaySteamProfile.TabIndex = 34;
@@ -1123,7 +1123,7 @@
             // LBL_DisplaySteamProfile
             // 
             this.LBL_DisplaySteamProfile.AutoSize = true;
-            this.LBL_DisplaySteamProfile.Location = new System.Drawing.Point(187, 96);
+            this.LBL_DisplaySteamProfile.Location = new System.Drawing.Point(132, 101);
             this.LBL_DisplaySteamProfile.Name = "LBL_DisplaySteamProfile";
             this.LBL_DisplaySteamProfile.Size = new System.Drawing.Size(121, 15);
             this.LBL_DisplaySteamProfile.TabIndex = 33;
@@ -1134,20 +1134,48 @@
             this.CBX_Language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBX_Language.FormattingEnabled = true;
             this.CBX_Language.Items.AddRange(new object[] {
-            "Default/Auto",
-            "DirectX 11 (Recommended)",
-            "DirectX 12 (Experimental)",
-            "OpenGL",
-            "Vulkan (Experimental)"});
-            this.CBX_Language.Location = new System.Drawing.Point(304, 43);
+            "беларуская - Belarussian",
+            "Català - Catalan",
+            "Čeština - Czech",
+            "Dansk - Danish",
+            "Deutsch - German",
+            "Deutsch (Österreich) - German (Austria)",
+            "English (default)",
+            "Español - Spanish",
+            "Suomi - Finnish",
+            "Français - French",
+            "Français (Canada) - French (Canada)",
+            "Magyar - Hungarian",
+            "Italiano - Italian",
+            "日本国 - Japanese",
+            "Қазақ - Kazakh",
+            "한국아 - Korean",
+            "Latviešu - Latvian",
+            "Norsk (bokmål) - Norweign (Bokmål)",
+            "Nederlands - Dutch",
+            "Polski - Polish",
+            "Português - Portuguese",
+            "Português (Brasil) - Portuguese (Brazil)",
+            "Romanian",
+            "Pycckᴎй - Russian",
+            "Slovenčina - Slovak",
+            "Serbian Cyrillic (Bosnia and Herzegovina)",
+            "Serbian Latin (Bosnia and Herzegovina)",
+            "ไทย - Thai",
+            "Türkçe - Turkish",
+            "Українсьа - Ukrainian",
+            "Vietnamese",
+            "简体中文 - Chinese (Simplified)",
+            "繁體中文 - Chinese (Traditional)"});
+            this.CBX_Language.Location = new System.Drawing.Point(249, 48);
             this.CBX_Language.Name = "CBX_Language";
-            this.CBX_Language.Size = new System.Drawing.Size(121, 23);
+            this.CBX_Language.Size = new System.Drawing.Size(220, 23);
             this.CBX_Language.TabIndex = 18;
             // 
             // LBL_Language
             // 
             this.LBL_Language.AutoSize = true;
-            this.LBL_Language.Location = new System.Drawing.Point(187, 46);
+            this.LBL_Language.Location = new System.Drawing.Point(132, 51);
             this.LBL_Language.Name = "LBL_Language";
             this.LBL_Language.Size = new System.Drawing.Size(59, 15);
             this.LBL_Language.TabIndex = 17;

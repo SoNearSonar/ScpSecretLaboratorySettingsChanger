@@ -1,4 +1,5 @@
 using ScpSecretLaboratorySettingsChanger.Helpers;
+using ScpSecretLaboratorySettingsChanger.Objects;
 using SFML.Window;
 
 namespace ScpSecretLaboratorySettingsChanger
@@ -90,6 +91,7 @@ namespace ScpSecretLaboratorySettingsChanger
             RegistryReaderHelper.SaveRegistryKeyValue("07ragdoll_cleanup::-%(|::", TBR_RagdollCleanupTime.Value);
 
             // Other
+            RegistryReaderHelper.SaveRegistryKeyValue("13translation_path::-%(|::", Translations.GetTranslationValue(CBX_Language.SelectedIndex));
             RegistryReaderHelper.SaveRegistryKeyValue("00DisplaySteamProfile::-%(|::", CHK_DisplaySteamProfile.Checked);
             RegistryReaderHelper.SaveRegistryKeyValue("00DNT::-%(|::", CHK_DoNotTrack.Checked);
             RegistryReaderHelper.SaveRegistryKeyValue("00ToggleTaskbarFlash::-%(|::", CHK_FlashTaskbar.Checked);
@@ -144,6 +146,7 @@ namespace ScpSecretLaboratorySettingsChanger
             TBR_RagdollCleanupTime.Value = FormatSliderValue(RegistryReaderHelper.ReadRegistryKeyValue<double>("07ragdoll_cleanup::-%(|::"));
 
             // Other
+            CBX_Language.SelectedIndex = Translations.GetIndexOfTranslation(RegistryReaderHelper.ReadRegistryKeyValue<string>("13translation_path::-%(|::"));
             CHK_DisplaySteamProfile.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00DisplaySteamProfile::-%(|::");
             CHK_DoNotTrack.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00DNT::-%(|::");
             CHK_FlashTaskbar.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00ToggleTaskbarFlash::-%(|::");
