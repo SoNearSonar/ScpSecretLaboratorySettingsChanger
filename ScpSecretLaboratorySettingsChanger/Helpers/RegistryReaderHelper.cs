@@ -54,7 +54,7 @@ namespace ScpSecretLaboratorySettingsChanger.Helpers
             try
             {
                 TypeConverter converter = TypeDescriptor.GetConverter(typeof(T));
-                if (RegistryKeys.ContainsKey(key) && converter != null)
+                if (RegistryKeys.ContainsKey(key) && !string.IsNullOrWhiteSpace(RegistryKeys[key].ToString()) && converter != null)
                 {
                     return (T)converter.ConvertFromString(RegistryKeys[key].ToString());
                 }

@@ -1170,6 +1170,10 @@
             this.ClientSize = new System.Drawing.Size(637, 383);
             this.Controls.Add(this.TCTRL_Settings);
             this.Controls.Add(this.BTN_SaveSettings);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(653, 422);
+            this.MinimumSize = new System.Drawing.Size(653, 422);
             this.Name = "SCPSLSC";
             this.Text = "SCP: Secret Laboratory Settings Changer";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SCPSLSC_FormClosing);

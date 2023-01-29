@@ -62,11 +62,11 @@ namespace ScpSecretLaboratorySettingsChanger
             RegistryReaderHelper.SaveRegistryKeyValue("00gfxsets_bloom::-%(|::", CHK_Bloom.Checked);
 
             // Audio
-            RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_Master::-%(|::", TBR_MasterVolume.Value);
-            RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_Effects::-%(|::", TBR_SoundEffectsVolume.Value);
-            RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_MenuMusic::-%(|::", TBR_VoiceChatVolume.Value);
-            RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_VoiceChat::-%(|::", TBR_MenuMusicVolume.Value);
-            RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_Interface::-%(|::", TBR_InterfaceVolume.Value);
+            RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_Master::-%(|::", TBR_MasterVolume.Value * 0.01);
+            RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_Effects::-%(|::", TBR_SoundEffectsVolume.Value * 0.01);
+            RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_MenuMusic::-%(|::", TBR_VoiceChatVolume.Value * 0.01);
+            RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_VoiceChat::-%(|::", TBR_MenuMusicVolume.Value * 0.01);
+            RegistryReaderHelper.SaveRegistryKeyValue("06AudioSettings_Interface::-%(|::", TBR_InterfaceVolume.Value * 0.01);
             RegistryReaderHelper.SaveRegistryKeyValue("13VcMicName::-%(|::", CBX_InputDevice.SelectedIndex == 0 ? string.Empty : CBX_InputDevice.Text);
             RegistryReaderHelper.SaveRegistryKeyValue("00VcNoiseRed::-%(|::", CHK_EnableNoiseReduction.Checked);
             RegistryReaderHelper.SaveRegistryKeyValue("07MenuTheme::-%(|::", CBX_MenuTheme.SelectedIndex);
@@ -123,6 +123,30 @@ namespace ScpSecretLaboratorySettingsChanger
             TBR_VoiceChatVolume.Value = FormatSliderValue(RegistryReaderHelper.ReadRegistryKeyValue<double>("06AudioSettings_MenuMusic::-%(|::"));
             TBR_MenuMusicVolume.Value = FormatSliderValue(RegistryReaderHelper.ReadRegistryKeyValue<double>("06AudioSettings_VoiceChat::-%(|::"));
             TBR_InterfaceVolume.Value = FormatSliderValue(RegistryReaderHelper.ReadRegistryKeyValue<double>("06AudioSettings_Interface::-%(|::"));
+            CHK_MuteSpectators.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00mute_spectators::-%(|::");
+            CHK_EnableNoiseReduction.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00VcNoiseRed::-%(|::");
+            CBX_MenuTheme.SelectedIndex = RegistryReaderHelper.ReadRegistryKeyValue<int>("07MenuTheme::-%(|::");
+            CBX_InputDevice.SelectedIndex = RegistryReaderHelper.ReadRegistryKeyValue<int>("13VcMicName::-%(|::");
+
+            // Gameplay
+            CHK_FastIntroFade.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00ClassIntroFastFade::-%(|::");
+            CHK_HeadBob.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00HeadBob::-%(|::");
+            CHK_ToggleSprint.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00ToggleSprint::-%(|::");
+            CHK_DisplayExactHP.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00HealthBarShowsExact::-%(|::");
+            CHK_RichPresence.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00RichPresence::-%(|::");
+            CHK_PublicLobby.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00PublicLobby::-%(|::");
+            CHK_HideIPAddress.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00HideIP::-%(|::");
+            CHK_ToggleSearch.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00ToggleSearch::-%(|:");
+            CHK_Scp079ToggleView.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00ModeSwitchSetting079::-%(|::");
+            CHK_Scp079PostProcessing.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00PostProcessing079::-%(|::");
+            CHK_Subtitles.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00Subtitles::-%(|::");
+            CHK_DarkMode.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00DarkMode::-%(|::");
+            TBR_RagdollCleanupTime.Value = FormatSliderValue(RegistryReaderHelper.ReadRegistryKeyValue<double>("07ragdoll_cleanup::-%(|::"));
+
+            // Other
+            CHK_DisplaySteamProfile.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00DisplaySteamProfile::-%(|::");
+            CHK_DoNotTrack.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00DNT::-%(|::");
+            CHK_FlashTaskbar.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00ToggleTaskbarFlash::-%(|::");
         }
 
         private void SaveSettings()
