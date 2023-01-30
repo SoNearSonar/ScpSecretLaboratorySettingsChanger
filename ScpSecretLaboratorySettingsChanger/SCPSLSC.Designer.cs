@@ -83,15 +83,6 @@
             this.TBR_VoiceChatVolume = new System.Windows.Forms.TrackBar();
             this.TBR_SoundEffectsVolume = new System.Windows.Forms.TrackBar();
             this.TBR_MasterVolume = new System.Windows.Forms.TrackBar();
-            this.TPG_Controls = new System.Windows.Forms.TabPage();
-            this.TCTRL_Controls = new System.Windows.Forms.TabControl();
-            this.TPG_Movement = new System.Windows.Forms.TabPage();
-            this.TPG_GameplayControls = new System.Windows.Forms.TabPage();
-            this.TPG_Weapons = new System.Windows.Forms.TabPage();
-            this.TPG_Hotkeys = new System.Windows.Forms.TabPage();
-            this.TPG_Comms = new System.Windows.Forms.TabPage();
-            this.TPG_Scp079 = new System.Windows.Forms.TabPage();
-            this.TPG_System = new System.Windows.Forms.TabPage();
             this.TPG_Gameplay = new System.Windows.Forms.TabPage();
             this.CHK_DisplayExactHP = new System.Windows.Forms.CheckBox();
             this.CHK_PublicLobby = new System.Windows.Forms.CheckBox();
@@ -128,21 +119,48 @@
             this.LBL_DisplaySteamProfile = new System.Windows.Forms.Label();
             this.CBX_Language = new System.Windows.Forms.ComboBox();
             this.LBL_Language = new System.Windows.Forms.Label();
-            this.BTN_SaveSettings = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.TPG_SpawnPreferences = new System.Windows.Forms.TabPage();
+            this.LBL_Scp939Pref = new System.Windows.Forms.Label();
+            this.LBL_Scp173Pref = new System.Windows.Forms.Label();
+            this.LBL_Scp106Pref = new System.Windows.Forms.Label();
+            this.TBR_Scp939Pref = new System.Windows.Forms.TrackBar();
+            this.TBR_Scp173Pref = new System.Windows.Forms.TrackBar();
+            this.TBR_Scp106Pref = new System.Windows.Forms.TrackBar();
+            this.LBL_Scp096Pref = new System.Windows.Forms.Label();
+            this.LBL_Scp079Pref = new System.Windows.Forms.Label();
+            this.LBL_Scp049Pref = new System.Windows.Forms.Label();
+            this.TBR_Scp096Pref = new System.Windows.Forms.TrackBar();
+            this.TBR_Scp079Pref = new System.Windows.Forms.TrackBar();
+            this.TBR_Scp049Pref = new System.Windows.Forms.TrackBar();
+            this.TPG_Controls = new System.Windows.Forms.TabPage();
+            this.TCTRL_Controls = new System.Windows.Forms.TabControl();
+            this.TPG_Movement = new System.Windows.Forms.TabPage();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TXT_Sneak = new System.Windows.Forms.TextBox();
+            this.LBL_Sneak = new System.Windows.Forms.Label();
+            this.TXT_Run = new System.Windows.Forms.TextBox();
+            this.LBL_Run = new System.Windows.Forms.Label();
+            this.TXT_Jump = new System.Windows.Forms.TextBox();
+            this.LBL_Jump = new System.Windows.Forms.Label();
+            this.TPG_GameplayControls = new System.Windows.Forms.TabPage();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.TPG_Weapons = new System.Windows.Forms.TabPage();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -155,6 +173,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.TPG_Hotkeys = new System.Windows.Forms.TabPage();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.textBox21 = new System.Windows.Forms.TextBox();
@@ -165,10 +184,12 @@
             this.label23 = new System.Windows.Forms.Label();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
+            this.TPG_Comms = new System.Windows.Forms.TabPage();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
+            this.TPG_Scp079 = new System.Windows.Forms.TabPage();
             this.textBox27 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.textBox28 = new System.Windows.Forms.TextBox();
@@ -181,6 +202,7 @@
             this.label31 = new System.Windows.Forms.Label();
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
+            this.TPG_System = new System.Windows.Forms.TabPage();
             this.textBox33 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.textBox34 = new System.Windows.Forms.TextBox();
@@ -191,16 +213,8 @@
             this.label36 = new System.Windows.Forms.Label();
             this.textBox37 = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.BTN_SaveSettings = new System.Windows.Forms.Button();
+            this.LBL_SpawnPrefNote = new System.Windows.Forms.Label();
             this.TCTRL_Settings.SuspendLayout();
             this.tpgGameSettings.SuspendLayout();
             this.TCTRL_GameSettings.SuspendLayout();
@@ -212,8 +226,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.TBR_VoiceChatVolume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TBR_SoundEffectsVolume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TBR_MasterVolume)).BeginInit();
-            this.TPG_Controls.SuspendLayout();
-            this.TCTRL_Controls.SuspendLayout();
+            this.TPG_Gameplay.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_RagdollCleanupTime)).BeginInit();
+            this.TPG_Other.SuspendLayout();
+            this.TPG_SpawnPreferences.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp939Pref)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp173Pref)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp106Pref)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp096Pref)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp079Pref)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp049Pref)).BeginInit();
             this.TPG_Movement.SuspendLayout();
             this.TPG_GameplayControls.SuspendLayout();
             this.TPG_Weapons.SuspendLayout();
@@ -221,14 +243,12 @@
             this.TPG_Comms.SuspendLayout();
             this.TPG_Scp079.SuspendLayout();
             this.TPG_System.SuspendLayout();
-            this.TPG_Gameplay.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TBR_RagdollCleanupTime)).BeginInit();
-            this.TPG_Other.SuspendLayout();
             this.SuspendLayout();
             // 
             // TCTRL_Settings
             // 
             this.TCTRL_Settings.Controls.Add(this.tpgGameSettings);
+            this.TCTRL_Settings.Controls.Add(this.TPG_SpawnPreferences);
             this.TCTRL_Settings.Location = new System.Drawing.Point(6, 5);
             this.TCTRL_Settings.Name = "TCTRL_Settings";
             this.TCTRL_Settings.SelectedIndex = 0;
@@ -250,7 +270,6 @@
             // 
             this.TCTRL_GameSettings.Controls.Add(this.TPG_Video);
             this.TCTRL_GameSettings.Controls.Add(this.TPG_Audio);
-            this.TCTRL_GameSettings.Controls.Add(this.TPG_Controls);
             this.TCTRL_GameSettings.Controls.Add(this.TPG_Gameplay);
             this.TCTRL_GameSettings.Controls.Add(this.TPG_Other);
             this.TCTRL_GameSettings.Location = new System.Drawing.Point(6, 6);
@@ -851,174 +870,6 @@
             this.TBR_MasterVolume.TabIndex = 0;
             this.TBR_MasterVolume.TickFrequency = 10;
             // 
-            // TPG_Controls
-            // 
-            this.TPG_Controls.Controls.Add(this.TCTRL_Controls);
-            this.TPG_Controls.Location = new System.Drawing.Point(4, 24);
-            this.TPG_Controls.Name = "TPG_Controls";
-            this.TPG_Controls.Padding = new System.Windows.Forms.Padding(3);
-            this.TPG_Controls.Size = new System.Drawing.Size(599, 263);
-            this.TPG_Controls.TabIndex = 2;
-            this.TPG_Controls.Text = "Controls";
-            this.TPG_Controls.UseVisualStyleBackColor = true;
-            // 
-            // TCTRL_Controls
-            // 
-            this.TCTRL_Controls.Controls.Add(this.TPG_Movement);
-            this.TCTRL_Controls.Controls.Add(this.TPG_GameplayControls);
-            this.TCTRL_Controls.Controls.Add(this.TPG_Weapons);
-            this.TCTRL_Controls.Controls.Add(this.TPG_Hotkeys);
-            this.TCTRL_Controls.Controls.Add(this.TPG_Comms);
-            this.TCTRL_Controls.Controls.Add(this.TPG_Scp079);
-            this.TCTRL_Controls.Controls.Add(this.TPG_System);
-            this.TCTRL_Controls.Location = new System.Drawing.Point(6, 6);
-            this.TCTRL_Controls.Name = "TCTRL_Controls";
-            this.TCTRL_Controls.SelectedIndex = 0;
-            this.TCTRL_Controls.Size = new System.Drawing.Size(587, 251);
-            this.TCTRL_Controls.TabIndex = 0;
-            // 
-            // TPG_Movement
-            // 
-            this.TPG_Movement.Controls.Add(this.textBox7);
-            this.TPG_Movement.Controls.Add(this.label7);
-            this.TPG_Movement.Controls.Add(this.textBox6);
-            this.TPG_Movement.Controls.Add(this.label6);
-            this.TPG_Movement.Controls.Add(this.textBox5);
-            this.TPG_Movement.Controls.Add(this.label5);
-            this.TPG_Movement.Controls.Add(this.textBox4);
-            this.TPG_Movement.Controls.Add(this.label4);
-            this.TPG_Movement.Controls.Add(this.textBox3);
-            this.TPG_Movement.Controls.Add(this.label3);
-            this.TPG_Movement.Controls.Add(this.textBox2);
-            this.TPG_Movement.Controls.Add(this.label2);
-            this.TPG_Movement.Controls.Add(this.textBox1);
-            this.TPG_Movement.Controls.Add(this.label1);
-            this.TPG_Movement.Location = new System.Drawing.Point(4, 24);
-            this.TPG_Movement.Name = "TPG_Movement";
-            this.TPG_Movement.Padding = new System.Windows.Forms.Padding(3);
-            this.TPG_Movement.Size = new System.Drawing.Size(579, 223);
-            this.TPG_Movement.TabIndex = 0;
-            this.TPG_Movement.Text = "Movement";
-            this.TPG_Movement.UseVisualStyleBackColor = true;
-            // 
-            // TPG_GameplayControls
-            // 
-            this.TPG_GameplayControls.Controls.Add(this.textBox8);
-            this.TPG_GameplayControls.Controls.Add(this.label8);
-            this.TPG_GameplayControls.Controls.Add(this.textBox9);
-            this.TPG_GameplayControls.Controls.Add(this.label9);
-            this.TPG_GameplayControls.Controls.Add(this.textBox10);
-            this.TPG_GameplayControls.Controls.Add(this.label10);
-            this.TPG_GameplayControls.Controls.Add(this.textBox11);
-            this.TPG_GameplayControls.Controls.Add(this.label11);
-            this.TPG_GameplayControls.Controls.Add(this.textBox12);
-            this.TPG_GameplayControls.Controls.Add(this.label12);
-            this.TPG_GameplayControls.Location = new System.Drawing.Point(4, 24);
-            this.TPG_GameplayControls.Name = "TPG_GameplayControls";
-            this.TPG_GameplayControls.Padding = new System.Windows.Forms.Padding(3);
-            this.TPG_GameplayControls.Size = new System.Drawing.Size(579, 223);
-            this.TPG_GameplayControls.TabIndex = 1;
-            this.TPG_GameplayControls.Text = "Gameplay";
-            this.TPG_GameplayControls.UseVisualStyleBackColor = true;
-            // 
-            // TPG_Weapons
-            // 
-            this.TPG_Weapons.Controls.Add(this.textBox14);
-            this.TPG_Weapons.Controls.Add(this.label14);
-            this.TPG_Weapons.Controls.Add(this.textBox15);
-            this.TPG_Weapons.Controls.Add(this.label15);
-            this.TPG_Weapons.Controls.Add(this.textBox16);
-            this.TPG_Weapons.Controls.Add(this.label16);
-            this.TPG_Weapons.Controls.Add(this.textBox17);
-            this.TPG_Weapons.Controls.Add(this.label17);
-            this.TPG_Weapons.Controls.Add(this.textBox18);
-            this.TPG_Weapons.Controls.Add(this.label18);
-            this.TPG_Weapons.Controls.Add(this.textBox19);
-            this.TPG_Weapons.Controls.Add(this.label19);
-            this.TPG_Weapons.Location = new System.Drawing.Point(4, 24);
-            this.TPG_Weapons.Name = "TPG_Weapons";
-            this.TPG_Weapons.Padding = new System.Windows.Forms.Padding(3);
-            this.TPG_Weapons.Size = new System.Drawing.Size(579, 223);
-            this.TPG_Weapons.TabIndex = 2;
-            this.TPG_Weapons.Text = "Weapons";
-            this.TPG_Weapons.UseVisualStyleBackColor = true;
-            // 
-            // TPG_Hotkeys
-            // 
-            this.TPG_Hotkeys.Controls.Add(this.textBox20);
-            this.TPG_Hotkeys.Controls.Add(this.label20);
-            this.TPG_Hotkeys.Controls.Add(this.textBox21);
-            this.TPG_Hotkeys.Controls.Add(this.label21);
-            this.TPG_Hotkeys.Controls.Add(this.textBox22);
-            this.TPG_Hotkeys.Controls.Add(this.label22);
-            this.TPG_Hotkeys.Controls.Add(this.textBox23);
-            this.TPG_Hotkeys.Controls.Add(this.label23);
-            this.TPG_Hotkeys.Controls.Add(this.textBox24);
-            this.TPG_Hotkeys.Controls.Add(this.label24);
-            this.TPG_Hotkeys.Location = new System.Drawing.Point(4, 24);
-            this.TPG_Hotkeys.Name = "TPG_Hotkeys";
-            this.TPG_Hotkeys.Padding = new System.Windows.Forms.Padding(3);
-            this.TPG_Hotkeys.Size = new System.Drawing.Size(579, 223);
-            this.TPG_Hotkeys.TabIndex = 3;
-            this.TPG_Hotkeys.Text = "Hotkeys";
-            this.TPG_Hotkeys.UseVisualStyleBackColor = true;
-            // 
-            // TPG_Comms
-            // 
-            this.TPG_Comms.Controls.Add(this.textBox25);
-            this.TPG_Comms.Controls.Add(this.label25);
-            this.TPG_Comms.Controls.Add(this.textBox26);
-            this.TPG_Comms.Controls.Add(this.label26);
-            this.TPG_Comms.Location = new System.Drawing.Point(4, 24);
-            this.TPG_Comms.Name = "TPG_Comms";
-            this.TPG_Comms.Padding = new System.Windows.Forms.Padding(3);
-            this.TPG_Comms.Size = new System.Drawing.Size(579, 223);
-            this.TPG_Comms.TabIndex = 4;
-            this.TPG_Comms.Text = "Comms";
-            this.TPG_Comms.UseVisualStyleBackColor = true;
-            // 
-            // TPG_Scp079
-            // 
-            this.TPG_Scp079.Controls.Add(this.textBox27);
-            this.TPG_Scp079.Controls.Add(this.label27);
-            this.TPG_Scp079.Controls.Add(this.textBox28);
-            this.TPG_Scp079.Controls.Add(this.label28);
-            this.TPG_Scp079.Controls.Add(this.textBox29);
-            this.TPG_Scp079.Controls.Add(this.label29);
-            this.TPG_Scp079.Controls.Add(this.textBox30);
-            this.TPG_Scp079.Controls.Add(this.label30);
-            this.TPG_Scp079.Controls.Add(this.textBox31);
-            this.TPG_Scp079.Controls.Add(this.label31);
-            this.TPG_Scp079.Controls.Add(this.textBox32);
-            this.TPG_Scp079.Controls.Add(this.label32);
-            this.TPG_Scp079.Location = new System.Drawing.Point(4, 24);
-            this.TPG_Scp079.Name = "TPG_Scp079";
-            this.TPG_Scp079.Padding = new System.Windows.Forms.Padding(3);
-            this.TPG_Scp079.Size = new System.Drawing.Size(579, 223);
-            this.TPG_Scp079.TabIndex = 5;
-            this.TPG_Scp079.Text = "SCP-079";
-            this.TPG_Scp079.UseVisualStyleBackColor = true;
-            // 
-            // TPG_System
-            // 
-            this.TPG_System.Controls.Add(this.textBox33);
-            this.TPG_System.Controls.Add(this.label33);
-            this.TPG_System.Controls.Add(this.textBox34);
-            this.TPG_System.Controls.Add(this.label34);
-            this.TPG_System.Controls.Add(this.textBox35);
-            this.TPG_System.Controls.Add(this.label35);
-            this.TPG_System.Controls.Add(this.textBox36);
-            this.TPG_System.Controls.Add(this.label36);
-            this.TPG_System.Controls.Add(this.textBox37);
-            this.TPG_System.Controls.Add(this.label37);
-            this.TPG_System.Location = new System.Drawing.Point(4, 24);
-            this.TPG_System.Name = "TPG_System";
-            this.TPG_System.Padding = new System.Windows.Forms.Padding(3);
-            this.TPG_System.Size = new System.Drawing.Size(579, 223);
-            this.TPG_System.TabIndex = 6;
-            this.TPG_System.Text = "System";
-            this.TPG_System.UseVisualStyleBackColor = true;
-            // 
             // TPG_Gameplay
             // 
             this.TPG_Gameplay.Controls.Add(this.CHK_DisplayExactHP);
@@ -1322,7 +1173,7 @@
             // CHK_FlashTaskbar
             // 
             this.CHK_FlashTaskbar.AutoSize = true;
-            this.CHK_FlashTaskbar.Location = new System.Drawing.Point(325, 193);
+            this.CHK_FlashTaskbar.Location = new System.Drawing.Point(324, 192);
             this.CHK_FlashTaskbar.Name = "CHK_FlashTaskbar";
             this.CHK_FlashTaskbar.Size = new System.Drawing.Size(66, 19);
             this.CHK_FlashTaskbar.TabIndex = 38;
@@ -1332,7 +1183,7 @@
             // LBL_FlashTaskbar
             // 
             this.LBL_FlashTaskbar.AutoSize = true;
-            this.LBL_FlashTaskbar.Location = new System.Drawing.Point(132, 197);
+            this.LBL_FlashTaskbar.Location = new System.Drawing.Point(101, 196);
             this.LBL_FlashTaskbar.Name = "LBL_FlashTaskbar";
             this.LBL_FlashTaskbar.Size = new System.Drawing.Size(136, 15);
             this.LBL_FlashTaskbar.TabIndex = 37;
@@ -1341,7 +1192,7 @@
             // CHK_DoNotTrack
             // 
             this.CHK_DoNotTrack.AutoSize = true;
-            this.CHK_DoNotTrack.Location = new System.Drawing.Point(325, 145);
+            this.CHK_DoNotTrack.Location = new System.Drawing.Point(324, 144);
             this.CHK_DoNotTrack.Name = "CHK_DoNotTrack";
             this.CHK_DoNotTrack.Size = new System.Drawing.Size(66, 19);
             this.CHK_DoNotTrack.TabIndex = 36;
@@ -1351,7 +1202,7 @@
             // LBL_DoNotTrack
             // 
             this.LBL_DoNotTrack.AutoSize = true;
-            this.LBL_DoNotTrack.Location = new System.Drawing.Point(132, 149);
+            this.LBL_DoNotTrack.Location = new System.Drawing.Point(101, 148);
             this.LBL_DoNotTrack.Name = "LBL_DoNotTrack";
             this.LBL_DoNotTrack.Size = new System.Drawing.Size(111, 15);
             this.LBL_DoNotTrack.TabIndex = 35;
@@ -1360,7 +1211,7 @@
             // CHK_DisplaySteamProfile
             // 
             this.CHK_DisplaySteamProfile.AutoSize = true;
-            this.CHK_DisplaySteamProfile.Location = new System.Drawing.Point(325, 97);
+            this.CHK_DisplaySteamProfile.Location = new System.Drawing.Point(324, 96);
             this.CHK_DisplaySteamProfile.Name = "CHK_DisplaySteamProfile";
             this.CHK_DisplaySteamProfile.Size = new System.Drawing.Size(66, 19);
             this.CHK_DisplaySteamProfile.TabIndex = 34;
@@ -1370,7 +1221,7 @@
             // LBL_DisplaySteamProfile
             // 
             this.LBL_DisplaySteamProfile.AutoSize = true;
-            this.LBL_DisplaySteamProfile.Location = new System.Drawing.Point(132, 101);
+            this.LBL_DisplaySteamProfile.Location = new System.Drawing.Point(101, 100);
             this.LBL_DisplaySteamProfile.Name = "LBL_DisplaySteamProfile";
             this.LBL_DisplaySteamProfile.Size = new System.Drawing.Size(121, 15);
             this.LBL_DisplaySteamProfile.TabIndex = 33;
@@ -1414,109 +1265,205 @@
             "Vietnamese",
             "简体中文 - Chinese (Simplified)",
             "繁體中文 - Chinese (Traditional)"});
-            this.CBX_Language.Location = new System.Drawing.Point(249, 48);
+            this.CBX_Language.Location = new System.Drawing.Point(218, 47);
             this.CBX_Language.Name = "CBX_Language";
-            this.CBX_Language.Size = new System.Drawing.Size(220, 23);
+            this.CBX_Language.Size = new System.Drawing.Size(285, 23);
             this.CBX_Language.TabIndex = 18;
             // 
             // LBL_Language
             // 
             this.LBL_Language.AutoSize = true;
-            this.LBL_Language.Location = new System.Drawing.Point(132, 51);
+            this.LBL_Language.Location = new System.Drawing.Point(101, 50);
             this.LBL_Language.Name = "LBL_Language";
             this.LBL_Language.Size = new System.Drawing.Size(59, 15);
             this.LBL_Language.TabIndex = 17;
             this.LBL_Language.Text = "Language";
             // 
-            // BTN_SaveSettings
+            // TPG_SpawnPreferences
             // 
-            this.BTN_SaveSettings.Location = new System.Drawing.Point(259, 343);
-            this.BTN_SaveSettings.Name = "BTN_SaveSettings";
-            this.BTN_SaveSettings.Size = new System.Drawing.Size(116, 30);
-            this.BTN_SaveSettings.TabIndex = 1;
-            this.BTN_SaveSettings.Text = "Save Settings";
-            this.BTN_SaveSettings.UseVisualStyleBackColor = true;
-            this.BTN_SaveSettings.Click += new System.EventHandler(this.BTN_SaveSettings_Click);
+            this.TPG_SpawnPreferences.Controls.Add(this.LBL_SpawnPrefNote);
+            this.TPG_SpawnPreferences.Controls.Add(this.LBL_Scp939Pref);
+            this.TPG_SpawnPreferences.Controls.Add(this.LBL_Scp173Pref);
+            this.TPG_SpawnPreferences.Controls.Add(this.LBL_Scp106Pref);
+            this.TPG_SpawnPreferences.Controls.Add(this.TBR_Scp939Pref);
+            this.TPG_SpawnPreferences.Controls.Add(this.TBR_Scp173Pref);
+            this.TPG_SpawnPreferences.Controls.Add(this.TBR_Scp106Pref);
+            this.TPG_SpawnPreferences.Controls.Add(this.LBL_Scp096Pref);
+            this.TPG_SpawnPreferences.Controls.Add(this.LBL_Scp079Pref);
+            this.TPG_SpawnPreferences.Controls.Add(this.LBL_Scp049Pref);
+            this.TPG_SpawnPreferences.Controls.Add(this.TBR_Scp096Pref);
+            this.TPG_SpawnPreferences.Controls.Add(this.TBR_Scp079Pref);
+            this.TPG_SpawnPreferences.Controls.Add(this.TBR_Scp049Pref);
+            this.TPG_SpawnPreferences.Location = new System.Drawing.Point(4, 24);
+            this.TPG_SpawnPreferences.Name = "TPG_SpawnPreferences";
+            this.TPG_SpawnPreferences.Padding = new System.Windows.Forms.Padding(3);
+            this.TPG_SpawnPreferences.Size = new System.Drawing.Size(619, 303);
+            this.TPG_SpawnPreferences.TabIndex = 1;
+            this.TPG_SpawnPreferences.Text = "Spawn Preferences";
+            this.TPG_SpawnPreferences.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // LBL_Scp939Pref
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(185, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Jump:";
+            this.LBL_Scp939Pref.AutoSize = true;
+            this.LBL_Scp939Pref.Location = new System.Drawing.Point(325, 172);
+            this.LBL_Scp939Pref.Name = "LBL_Scp939Pref";
+            this.LBL_Scp939Pref.Size = new System.Drawing.Size(54, 15);
+            this.LBL_Scp939Pref.TabIndex = 19;
+            this.LBL_Scp939Pref.Text = "SCP-939:";
             // 
-            // textBox1
+            // LBL_Scp173Pref
             // 
-            this.textBox1.Location = new System.Drawing.Point(294, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 1;
+            this.LBL_Scp173Pref.AutoSize = true;
+            this.LBL_Scp173Pref.Location = new System.Drawing.Point(325, 121);
+            this.LBL_Scp173Pref.Name = "LBL_Scp173Pref";
+            this.LBL_Scp173Pref.Size = new System.Drawing.Size(54, 15);
+            this.LBL_Scp173Pref.TabIndex = 18;
+            this.LBL_Scp173Pref.Text = "SCP-173:";
             // 
-            // textBox2
+            // LBL_Scp106Pref
             // 
-            this.textBox2.Location = new System.Drawing.Point(294, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 3;
+            this.LBL_Scp106Pref.AutoSize = true;
+            this.LBL_Scp106Pref.Location = new System.Drawing.Point(325, 70);
+            this.LBL_Scp106Pref.Name = "LBL_Scp106Pref";
+            this.LBL_Scp106Pref.Size = new System.Drawing.Size(54, 15);
+            this.LBL_Scp106Pref.TabIndex = 17;
+            this.LBL_Scp106Pref.Text = "SCP-106:";
             // 
-            // label2
+            // TBR_Scp939Pref
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(185, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Run:";
+            this.TBR_Scp939Pref.Location = new System.Drawing.Point(420, 159);
+            this.TBR_Scp939Pref.Maximum = 5;
+            this.TBR_Scp939Pref.Minimum = -5;
+            this.TBR_Scp939Pref.Name = "TBR_Scp939Pref";
+            this.TBR_Scp939Pref.Size = new System.Drawing.Size(164, 45);
+            this.TBR_Scp939Pref.TabIndex = 16;
             // 
-            // textBox3
+            // TBR_Scp173Pref
             // 
-            this.textBox3.Location = new System.Drawing.Point(294, 73);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 5;
+            this.TBR_Scp173Pref.Location = new System.Drawing.Point(420, 108);
+            this.TBR_Scp173Pref.Maximum = 5;
+            this.TBR_Scp173Pref.Minimum = -5;
+            this.TBR_Scp173Pref.Name = "TBR_Scp173Pref";
+            this.TBR_Scp173Pref.Size = new System.Drawing.Size(164, 45);
+            this.TBR_Scp173Pref.TabIndex = 15;
             // 
-            // label3
+            // TBR_Scp106Pref
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(185, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Sneak:";
+            this.TBR_Scp106Pref.Location = new System.Drawing.Point(420, 57);
+            this.TBR_Scp106Pref.Maximum = 5;
+            this.TBR_Scp106Pref.Minimum = -5;
+            this.TBR_Scp106Pref.Name = "TBR_Scp106Pref";
+            this.TBR_Scp106Pref.Size = new System.Drawing.Size(164, 45);
+            this.TBR_Scp106Pref.TabIndex = 14;
             // 
-            // textBox4
+            // LBL_Scp096Pref
             // 
-            this.textBox4.Location = new System.Drawing.Point(294, 102);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 7;
+            this.LBL_Scp096Pref.AutoSize = true;
+            this.LBL_Scp096Pref.Location = new System.Drawing.Point(41, 172);
+            this.LBL_Scp096Pref.Name = "LBL_Scp096Pref";
+            this.LBL_Scp096Pref.Size = new System.Drawing.Size(54, 15);
+            this.LBL_Scp096Pref.TabIndex = 13;
+            this.LBL_Scp096Pref.Text = "SCP-096:";
             // 
-            // label4
+            // LBL_Scp079Pref
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(185, 105);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 15);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Move Forward:";
+            this.LBL_Scp079Pref.AutoSize = true;
+            this.LBL_Scp079Pref.Location = new System.Drawing.Point(41, 121);
+            this.LBL_Scp079Pref.Name = "LBL_Scp079Pref";
+            this.LBL_Scp079Pref.Size = new System.Drawing.Size(54, 15);
+            this.LBL_Scp079Pref.TabIndex = 12;
+            this.LBL_Scp079Pref.Text = "SCP-079:";
             // 
-            // textBox5
+            // LBL_Scp049Pref
             // 
-            this.textBox5.Location = new System.Drawing.Point(294, 131);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 9;
+            this.LBL_Scp049Pref.AutoSize = true;
+            this.LBL_Scp049Pref.Location = new System.Drawing.Point(41, 70);
+            this.LBL_Scp049Pref.Name = "LBL_Scp049Pref";
+            this.LBL_Scp049Pref.Size = new System.Drawing.Size(54, 15);
+            this.LBL_Scp049Pref.TabIndex = 11;
+            this.LBL_Scp049Pref.Text = "SCP-049:";
             // 
-            // label5
+            // TBR_Scp096Pref
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(185, 134);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 15);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Move Backward:";
+            this.TBR_Scp096Pref.Location = new System.Drawing.Point(136, 159);
+            this.TBR_Scp096Pref.Maximum = 5;
+            this.TBR_Scp096Pref.Minimum = -5;
+            this.TBR_Scp096Pref.Name = "TBR_Scp096Pref";
+            this.TBR_Scp096Pref.Size = new System.Drawing.Size(164, 45);
+            this.TBR_Scp096Pref.TabIndex = 10;
+            // 
+            // TBR_Scp079Pref
+            // 
+            this.TBR_Scp079Pref.Location = new System.Drawing.Point(136, 108);
+            this.TBR_Scp079Pref.Maximum = 5;
+            this.TBR_Scp079Pref.Minimum = -5;
+            this.TBR_Scp079Pref.Name = "TBR_Scp079Pref";
+            this.TBR_Scp079Pref.Size = new System.Drawing.Size(164, 45);
+            this.TBR_Scp079Pref.TabIndex = 9;
+            // 
+            // TBR_Scp049Pref
+            // 
+            this.TBR_Scp049Pref.Location = new System.Drawing.Point(136, 57);
+            this.TBR_Scp049Pref.Maximum = 5;
+            this.TBR_Scp049Pref.Minimum = -5;
+            this.TBR_Scp049Pref.Name = "TBR_Scp049Pref";
+            this.TBR_Scp049Pref.Size = new System.Drawing.Size(164, 45);
+            this.TBR_Scp049Pref.TabIndex = 8;
+            // 
+            // TPG_Controls
+            // 
+            this.TPG_Controls.Location = new System.Drawing.Point(0, 0);
+            this.TPG_Controls.Name = "TPG_Controls";
+            this.TPG_Controls.Size = new System.Drawing.Size(200, 100);
+            this.TPG_Controls.TabIndex = 0;
+            // 
+            // TCTRL_Controls
+            // 
+            this.TCTRL_Controls.Location = new System.Drawing.Point(0, 0);
+            this.TCTRL_Controls.Name = "TCTRL_Controls";
+            this.TCTRL_Controls.SelectedIndex = 0;
+            this.TCTRL_Controls.Size = new System.Drawing.Size(200, 100);
+            this.TCTRL_Controls.TabIndex = 0;
+            // 
+            // TPG_Movement
+            // 
+            this.TPG_Movement.Controls.Add(this.textBox7);
+            this.TPG_Movement.Controls.Add(this.label7);
+            this.TPG_Movement.Controls.Add(this.textBox6);
+            this.TPG_Movement.Controls.Add(this.label6);
+            this.TPG_Movement.Controls.Add(this.textBox5);
+            this.TPG_Movement.Controls.Add(this.label5);
+            this.TPG_Movement.Controls.Add(this.textBox4);
+            this.TPG_Movement.Controls.Add(this.label4);
+            this.TPG_Movement.Controls.Add(this.TXT_Sneak);
+            this.TPG_Movement.Controls.Add(this.LBL_Sneak);
+            this.TPG_Movement.Controls.Add(this.TXT_Run);
+            this.TPG_Movement.Controls.Add(this.LBL_Run);
+            this.TPG_Movement.Controls.Add(this.TXT_Jump);
+            this.TPG_Movement.Controls.Add(this.LBL_Jump);
+            this.TPG_Movement.Location = new System.Drawing.Point(4, 24);
+            this.TPG_Movement.Name = "TPG_Movement";
+            this.TPG_Movement.Padding = new System.Windows.Forms.Padding(3);
+            this.TPG_Movement.Size = new System.Drawing.Size(579, 223);
+            this.TPG_Movement.TabIndex = 0;
+            this.TPG_Movement.Text = "Movement";
+            this.TPG_Movement.UseVisualStyleBackColor = true;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(294, 189);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 23);
+            this.textBox7.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(185, 192);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 15);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Move Right:";
             // 
             // textBox6
             // 
@@ -1534,21 +1481,207 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Move Left:";
             // 
-            // textBox7
+            // textBox5
             // 
-            this.textBox7.Location = new System.Drawing.Point(294, 189);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 23);
-            this.textBox7.TabIndex = 13;
+            this.textBox5.Location = new System.Drawing.Point(294, 131);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 23);
+            this.textBox5.TabIndex = 9;
             // 
-            // label7
+            // label5
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(185, 192);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 15);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Move Right:";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(185, 134);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 15);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Move Backward:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(294, 102);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 23);
+            this.textBox4.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(185, 105);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 15);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Move Forward:";
+            // 
+            // TXT_Sneak
+            // 
+            this.TXT_Sneak.Location = new System.Drawing.Point(294, 73);
+            this.TXT_Sneak.Name = "TXT_Sneak";
+            this.TXT_Sneak.Size = new System.Drawing.Size(100, 23);
+            this.TXT_Sneak.TabIndex = 5;
+            // 
+            // LBL_Sneak
+            // 
+            this.LBL_Sneak.AutoSize = true;
+            this.LBL_Sneak.Location = new System.Drawing.Point(185, 76);
+            this.LBL_Sneak.Name = "LBL_Sneak";
+            this.LBL_Sneak.Size = new System.Drawing.Size(41, 15);
+            this.LBL_Sneak.TabIndex = 4;
+            this.LBL_Sneak.Text = "Sneak:";
+            // 
+            // TXT_Run
+            // 
+            this.TXT_Run.Location = new System.Drawing.Point(294, 44);
+            this.TXT_Run.Name = "TXT_Run";
+            this.TXT_Run.Size = new System.Drawing.Size(100, 23);
+            this.TXT_Run.TabIndex = 3;
+            // 
+            // LBL_Run
+            // 
+            this.LBL_Run.AutoSize = true;
+            this.LBL_Run.Location = new System.Drawing.Point(185, 47);
+            this.LBL_Run.Name = "LBL_Run";
+            this.LBL_Run.Size = new System.Drawing.Size(31, 15);
+            this.LBL_Run.TabIndex = 2;
+            this.LBL_Run.Text = "Run:";
+            // 
+            // TXT_Jump
+            // 
+            this.TXT_Jump.Location = new System.Drawing.Point(294, 15);
+            this.TXT_Jump.Name = "TXT_Jump";
+            this.TXT_Jump.Size = new System.Drawing.Size(100, 23);
+            this.TXT_Jump.TabIndex = 1;
+            // 
+            // LBL_Jump
+            // 
+            this.LBL_Jump.AutoSize = true;
+            this.LBL_Jump.Location = new System.Drawing.Point(185, 18);
+            this.LBL_Jump.Name = "LBL_Jump";
+            this.LBL_Jump.Size = new System.Drawing.Size(39, 15);
+            this.LBL_Jump.TabIndex = 0;
+            this.LBL_Jump.Text = "Jump:";
+            // 
+            // TPG_GameplayControls
+            // 
+            this.TPG_GameplayControls.Controls.Add(this.textBox8);
+            this.TPG_GameplayControls.Controls.Add(this.label8);
+            this.TPG_GameplayControls.Controls.Add(this.textBox9);
+            this.TPG_GameplayControls.Controls.Add(this.label9);
+            this.TPG_GameplayControls.Controls.Add(this.textBox10);
+            this.TPG_GameplayControls.Controls.Add(this.label10);
+            this.TPG_GameplayControls.Controls.Add(this.textBox11);
+            this.TPG_GameplayControls.Controls.Add(this.label11);
+            this.TPG_GameplayControls.Controls.Add(this.textBox12);
+            this.TPG_GameplayControls.Controls.Add(this.label12);
+            this.TPG_GameplayControls.Location = new System.Drawing.Point(4, 24);
+            this.TPG_GameplayControls.Name = "TPG_GameplayControls";
+            this.TPG_GameplayControls.Padding = new System.Windows.Forms.Padding(3);
+            this.TPG_GameplayControls.Size = new System.Drawing.Size(579, 223);
+            this.TPG_GameplayControls.TabIndex = 1;
+            this.TPG_GameplayControls.Text = "Gameplay";
+            this.TPG_GameplayControls.UseVisualStyleBackColor = true;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(294, 158);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 23);
+            this.textBox8.TabIndex = 41;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(185, 161);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(70, 15);
+            this.label8.TabIndex = 40;
+            this.label8.Text = "Throw Item:";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(294, 129);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 23);
+            this.textBox9.TabIndex = 39;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(185, 132);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(85, 15);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "Character Info:";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(294, 100);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 23);
+            this.textBox10.TabIndex = 37;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(185, 103);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 15);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Player List:";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(294, 71);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(100, 23);
+            this.textBox11.TabIndex = 35;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(185, 74);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(60, 15);
+            this.label11.TabIndex = 34;
+            this.label11.Text = "Inventory:";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(294, 42);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(100, 23);
+            this.textBox12.TabIndex = 33;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(185, 45);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(50, 15);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "Interact:";
+            // 
+            // TPG_Weapons
+            // 
+            this.TPG_Weapons.Controls.Add(this.textBox14);
+            this.TPG_Weapons.Controls.Add(this.label14);
+            this.TPG_Weapons.Controls.Add(this.textBox15);
+            this.TPG_Weapons.Controls.Add(this.label15);
+            this.TPG_Weapons.Controls.Add(this.textBox16);
+            this.TPG_Weapons.Controls.Add(this.label16);
+            this.TPG_Weapons.Controls.Add(this.textBox17);
+            this.TPG_Weapons.Controls.Add(this.label17);
+            this.TPG_Weapons.Controls.Add(this.textBox18);
+            this.TPG_Weapons.Controls.Add(this.label18);
+            this.TPG_Weapons.Controls.Add(this.textBox19);
+            this.TPG_Weapons.Controls.Add(this.label19);
+            this.TPG_Weapons.Location = new System.Drawing.Point(4, 24);
+            this.TPG_Weapons.Name = "TPG_Weapons";
+            this.TPG_Weapons.Padding = new System.Windows.Forms.Padding(3);
+            this.TPG_Weapons.Size = new System.Drawing.Size(579, 223);
+            this.TPG_Weapons.TabIndex = 2;
+            this.TPG_Weapons.Text = "Weapons";
+            this.TPG_Weapons.UseVisualStyleBackColor = true;
             // 
             // textBox14
             // 
@@ -1646,6 +1779,26 @@
             this.label19.TabIndex = 12;
             this.label19.Text = "Shoot:";
             // 
+            // TPG_Hotkeys
+            // 
+            this.TPG_Hotkeys.Controls.Add(this.textBox20);
+            this.TPG_Hotkeys.Controls.Add(this.label20);
+            this.TPG_Hotkeys.Controls.Add(this.textBox21);
+            this.TPG_Hotkeys.Controls.Add(this.label21);
+            this.TPG_Hotkeys.Controls.Add(this.textBox22);
+            this.TPG_Hotkeys.Controls.Add(this.label22);
+            this.TPG_Hotkeys.Controls.Add(this.textBox23);
+            this.TPG_Hotkeys.Controls.Add(this.label23);
+            this.TPG_Hotkeys.Controls.Add(this.textBox24);
+            this.TPG_Hotkeys.Controls.Add(this.label24);
+            this.TPG_Hotkeys.Location = new System.Drawing.Point(4, 24);
+            this.TPG_Hotkeys.Name = "TPG_Hotkeys";
+            this.TPG_Hotkeys.Padding = new System.Windows.Forms.Padding(3);
+            this.TPG_Hotkeys.Size = new System.Drawing.Size(579, 223);
+            this.TPG_Hotkeys.TabIndex = 3;
+            this.TPG_Hotkeys.Text = "Hotkeys";
+            this.TPG_Hotkeys.UseVisualStyleBackColor = true;
+            // 
             // textBox20
             // 
             this.textBox20.Location = new System.Drawing.Point(322, 158);
@@ -1726,6 +1879,20 @@
             this.label24.TabIndex = 22;
             this.label24.Text = "Keycard Hotkey:";
             // 
+            // TPG_Comms
+            // 
+            this.TPG_Comms.Controls.Add(this.textBox25);
+            this.TPG_Comms.Controls.Add(this.label25);
+            this.TPG_Comms.Controls.Add(this.textBox26);
+            this.TPG_Comms.Controls.Add(this.label26);
+            this.TPG_Comms.Location = new System.Drawing.Point(4, 24);
+            this.TPG_Comms.Name = "TPG_Comms";
+            this.TPG_Comms.Padding = new System.Windows.Forms.Padding(3);
+            this.TPG_Comms.Size = new System.Drawing.Size(579, 223);
+            this.TPG_Comms.TabIndex = 4;
+            this.TPG_Comms.Text = "Comms";
+            this.TPG_Comms.UseVisualStyleBackColor = true;
+            // 
             // textBox25
             // 
             this.textBox25.Location = new System.Drawing.Point(294, 114);
@@ -1757,6 +1924,28 @@
             this.label26.Size = new System.Drawing.Size(66, 15);
             this.label26.TabIndex = 4;
             this.label26.Text = "Voice Chat:";
+            // 
+            // TPG_Scp079
+            // 
+            this.TPG_Scp079.Controls.Add(this.textBox27);
+            this.TPG_Scp079.Controls.Add(this.label27);
+            this.TPG_Scp079.Controls.Add(this.textBox28);
+            this.TPG_Scp079.Controls.Add(this.label28);
+            this.TPG_Scp079.Controls.Add(this.textBox29);
+            this.TPG_Scp079.Controls.Add(this.label29);
+            this.TPG_Scp079.Controls.Add(this.textBox30);
+            this.TPG_Scp079.Controls.Add(this.label30);
+            this.TPG_Scp079.Controls.Add(this.textBox31);
+            this.TPG_Scp079.Controls.Add(this.label31);
+            this.TPG_Scp079.Controls.Add(this.textBox32);
+            this.TPG_Scp079.Controls.Add(this.label32);
+            this.TPG_Scp079.Location = new System.Drawing.Point(4, 24);
+            this.TPG_Scp079.Name = "TPG_Scp079";
+            this.TPG_Scp079.Padding = new System.Windows.Forms.Padding(3);
+            this.TPG_Scp079.Size = new System.Drawing.Size(579, 223);
+            this.TPG_Scp079.TabIndex = 5;
+            this.TPG_Scp079.Text = "SCP-079";
+            this.TPG_Scp079.UseVisualStyleBackColor = true;
             // 
             // textBox27
             // 
@@ -1854,6 +2043,26 @@
             this.label32.TabIndex = 12;
             this.label32.Text = "Free Look Mode:";
             // 
+            // TPG_System
+            // 
+            this.TPG_System.Controls.Add(this.textBox33);
+            this.TPG_System.Controls.Add(this.label33);
+            this.TPG_System.Controls.Add(this.textBox34);
+            this.TPG_System.Controls.Add(this.label34);
+            this.TPG_System.Controls.Add(this.textBox35);
+            this.TPG_System.Controls.Add(this.label35);
+            this.TPG_System.Controls.Add(this.textBox36);
+            this.TPG_System.Controls.Add(this.label36);
+            this.TPG_System.Controls.Add(this.textBox37);
+            this.TPG_System.Controls.Add(this.label37);
+            this.TPG_System.Location = new System.Drawing.Point(4, 24);
+            this.TPG_System.Name = "TPG_System";
+            this.TPG_System.Padding = new System.Windows.Forms.Padding(3);
+            this.TPG_System.Size = new System.Drawing.Size(579, 223);
+            this.TPG_System.TabIndex = 6;
+            this.TPG_System.Text = "System";
+            this.TPG_System.UseVisualStyleBackColor = true;
+            // 
             // textBox33
             // 
             this.textBox33.Location = new System.Drawing.Point(294, 158);
@@ -1934,85 +2143,24 @@
             this.label37.TabIndex = 32;
             this.label37.Text = "Jump:";
             // 
-            // textBox8
+            // BTN_SaveSettings
             // 
-            this.textBox8.Location = new System.Drawing.Point(294, 158);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 23);
-            this.textBox8.TabIndex = 41;
+            this.BTN_SaveSettings.Location = new System.Drawing.Point(259, 343);
+            this.BTN_SaveSettings.Name = "BTN_SaveSettings";
+            this.BTN_SaveSettings.Size = new System.Drawing.Size(116, 30);
+            this.BTN_SaveSettings.TabIndex = 1;
+            this.BTN_SaveSettings.Text = "Save Settings";
+            this.BTN_SaveSettings.UseVisualStyleBackColor = true;
+            this.BTN_SaveSettings.Click += new System.EventHandler(this.BTN_SaveSettings_Click);
             // 
-            // label8
+            // LBL_SpawnPrefNote
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(185, 161);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 15);
-            this.label8.TabIndex = 40;
-            this.label8.Text = "Throw Item:";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(294, 129);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 23);
-            this.textBox9.TabIndex = 39;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(185, 132);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 15);
-            this.label9.TabIndex = 38;
-            this.label9.Text = "Character Info:";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(294, 100);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 23);
-            this.textBox10.TabIndex = 37;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(185, 103);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 15);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "Player List:";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(294, 71);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 23);
-            this.textBox11.TabIndex = 35;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(185, 74);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 15);
-            this.label11.TabIndex = 34;
-            this.label11.Text = "Inventory:";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(294, 42);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 23);
-            this.textBox12.TabIndex = 33;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(185, 45);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(50, 15);
-            this.label12.TabIndex = 32;
-            this.label12.Text = "Interact:";
+            this.LBL_SpawnPrefNote.AutoSize = true;
+            this.LBL_SpawnPrefNote.Location = new System.Drawing.Point(169, 243);
+            this.LBL_SpawnPrefNote.Name = "LBL_SpawnPrefNote";
+            this.LBL_SpawnPrefNote.Size = new System.Drawing.Size(292, 15);
+            this.LBL_SpawnPrefNote.TabIndex = 20;
+            this.LBL_SpawnPrefNote.Text = "Slider: Left = Less Preference, Right = More Preference";
             // 
             // SCPSLSC
             // 
@@ -2042,8 +2190,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.TBR_VoiceChatVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TBR_SoundEffectsVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TBR_MasterVolume)).EndInit();
-            this.TPG_Controls.ResumeLayout(false);
-            this.TCTRL_Controls.ResumeLayout(false);
+            this.TPG_Gameplay.ResumeLayout(false);
+            this.TPG_Gameplay.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_RagdollCleanupTime)).EndInit();
+            this.TPG_Other.ResumeLayout(false);
+            this.TPG_Other.PerformLayout();
+            this.TPG_SpawnPreferences.ResumeLayout(false);
+            this.TPG_SpawnPreferences.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp939Pref)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp173Pref)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp106Pref)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp096Pref)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp079Pref)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBR_Scp049Pref)).EndInit();
             this.TPG_Movement.ResumeLayout(false);
             this.TPG_Movement.PerformLayout();
             this.TPG_GameplayControls.ResumeLayout(false);
@@ -2058,11 +2217,6 @@
             this.TPG_Scp079.PerformLayout();
             this.TPG_System.ResumeLayout(false);
             this.TPG_System.PerformLayout();
-            this.TPG_Gameplay.ResumeLayout(false);
-            this.TPG_Gameplay.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TBR_RagdollCleanupTime)).EndInit();
-            this.TPG_Other.ResumeLayout(false);
-            this.TPG_Other.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2177,12 +2331,12 @@
         private Label label5;
         private TextBox textBox4;
         private Label label4;
-        private TextBox textBox3;
-        private Label label3;
-        private TextBox textBox2;
-        private Label label2;
-        private TextBox textBox1;
-        private Label label1;
+        private TextBox TXT_Sneak;
+        private Label LBL_Sneak;
+        private TextBox TXT_Run;
+        private Label LBL_Run;
+        private TextBox TXT_Jump;
+        private Label LBL_Jump;
         private TextBox textBox14;
         private Label label14;
         private TextBox textBox15;
@@ -2241,5 +2395,19 @@
         private Label label11;
         private TextBox textBox12;
         private Label label12;
+        private TabPage TPG_SpawnPreferences;
+        private Label LBL_Scp939Pref;
+        private Label LBL_Scp173Pref;
+        private Label LBL_Scp106Pref;
+        private TrackBar TBR_Scp939Pref;
+        private TrackBar TBR_Scp173Pref;
+        private TrackBar TBR_Scp106Pref;
+        private Label LBL_Scp096Pref;
+        private Label LBL_Scp079Pref;
+        private Label LBL_Scp049Pref;
+        private TrackBar TBR_Scp096Pref;
+        private TrackBar TBR_Scp079Pref;
+        private TrackBar TBR_Scp049Pref;
+        private Label LBL_SpawnPrefNote;
     }
 }

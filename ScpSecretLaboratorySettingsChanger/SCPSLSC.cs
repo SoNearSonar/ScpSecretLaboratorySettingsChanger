@@ -18,7 +18,6 @@ namespace ScpSecretLaboratorySettingsChanger
             CHK_VSync_CheckedChanged(sender, e);
             CHK_RenderLights_CheckedChanged(sender, e);
             RegistryReaderHelper.ReadAllRegistryKeys();
-            KeybindReaderHelper.RealAllKeybinds();
             LoadSettings();
         }
 
@@ -77,8 +76,6 @@ namespace ScpSecretLaboratorySettingsChanger
             RegistryReaderHelper.SaveRegistryKeyValue("07MenuTheme::-%(|::", CBX_MenuTheme.SelectedIndex);
             RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00mute_spectators::-%(|::", CHK_MuteSpectators.Checked);
 
-            // Controls
-
             // Gameplay
             RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00ClassIntroFastFade::-%(|::", CHK_FastIntroFade.Checked);
             RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00HeadBob::-%(|::", CHK_HeadBob.Checked);
@@ -100,6 +97,14 @@ namespace ScpSecretLaboratorySettingsChanger
             RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00DisplaySteamProfile::-%(|::", CHK_DisplaySteamProfile.Checked);
             RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00DNT::-%(|::", CHK_DoNotTrack.Checked);
             RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00ToggleTaskbarFlash::-%(|::", CHK_FlashTaskbar.Checked);
+
+            // Spawn Preferences
+            RegistryReaderHelper.SaveRegistryKeyValue("07SpawnPreference_Role_5::-%(|::", TBR_Scp049Pref.Value);
+            RegistryReaderHelper.SaveRegistryKeyValue("07SpawnPreference_Role_7::-%(|::", TBR_Scp079Pref.Value);
+            RegistryReaderHelper.SaveRegistryKeyValue("07SpawnPreference_Role_9::-%(|::", TBR_Scp096Pref.Value);
+            RegistryReaderHelper.SaveRegistryKeyValue("07SpawnPreference_Role_3::-%(|::", TBR_Scp106Pref.Value);
+            RegistryReaderHelper.SaveRegistryKeyValue("07SpawnPreference_Role_0::-%(|::", TBR_Scp173Pref.Value);
+            RegistryReaderHelper.SaveRegistryKeyValue("07SpawnPreference_Role_16::-%(|::", TBR_Scp939Pref.Value);
 
             RegistryReaderHelper.WriteAllRegistryKeys();
         }
@@ -140,8 +145,6 @@ namespace ScpSecretLaboratorySettingsChanger
             CBX_MenuTheme.SelectedIndex = RegistryReaderHelper.ReadRegistryKeyValue<int>("07MenuTheme::-%(|::");
             CBX_InputDevice.SelectedIndex = RegistryReaderHelper.ReadRegistryKeyValue<int>("13VcMicName::-%(|::");
 
-            // Controls
-
             // Gameplay
             CHK_FastIntroFade.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00ClassIntroFastFade::-%(|::");
             CHK_HeadBob.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00HeadBob::-%(|::");
@@ -155,13 +158,21 @@ namespace ScpSecretLaboratorySettingsChanger
             CHK_Scp079PostProcessing.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00PostProcessing079::-%(|::");
             CHK_Subtitles.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00Subtitles::-%(|::");
             CHK_DarkMode.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00DarkMode::-%(|::");
-            TBR_RagdollCleanupTime.Value = FormatSliderValue(RegistryReaderHelper.ReadRegistryKeyValue<double>("07ragdoll_cleanup::-%(|::"));
+            TBR_RagdollCleanupTime.Value = RegistryReaderHelper.ReadRegistryKeyValue<int>("07ragdoll_cleanup::-%(|::");
 
             // Other
             CBX_Language.SelectedIndex = Translations.GetIndexOfTranslation(RegistryReaderHelper.ReadRegistryKeyValue<string>("13translation_path::-%(|::"));
             CHK_DisplaySteamProfile.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00DisplaySteamProfile::-%(|::");
             CHK_DoNotTrack.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00DNT::-%(|::");
             CHK_FlashTaskbar.Checked = RegistryReaderHelper.ReadRegistryKeyValue<bool>("00ToggleTaskbarFlash::-%(|::");
+
+            // Spawn Preferences
+            TBR_Scp049Pref.Value = RegistryReaderHelper.ReadRegistryKeyValue<int>("07SpawnPreference_Role_5::-%(|::");
+            TBR_Scp079Pref.Value = RegistryReaderHelper.ReadRegistryKeyValue<int>("07SpawnPreference_Role_7::-%(|::");
+            TBR_Scp096Pref.Value = RegistryReaderHelper.ReadRegistryKeyValue<int>("07SpawnPreference_Role_9::-%(|::");
+            TBR_Scp106Pref.Value = RegistryReaderHelper.ReadRegistryKeyValue<int>("07SpawnPreference_Role_3::-%(|::");
+            TBR_Scp173Pref.Value = RegistryReaderHelper.ReadRegistryKeyValue<int>("07SpawnPreference_Role_0::-%(|::");
+            TBR_Scp939Pref.Value = RegistryReaderHelper.ReadRegistryKeyValue<int>("07SpawnPreference_Role_16::-%(|::");
         }
 
         private void CHK_VSync_CheckedChanged(object sender, EventArgs e)
