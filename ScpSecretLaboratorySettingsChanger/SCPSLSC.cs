@@ -41,7 +41,6 @@ namespace ScpSecretLaboratorySettingsChanger
         {
             Properties.Settings.Default.MainTabIndex = TCTRL_Settings.SelectedIndex;
             Properties.Settings.Default.GameTabIndex =TCTRL_GameSettings.SelectedIndex;
-            Properties.Settings.Default.ControlsTabIndex = TCTRL_Controls.SelectedIndex;
             Properties.Settings.Default.Save();
         }
 
@@ -93,7 +92,7 @@ namespace ScpSecretLaboratorySettingsChanger
 
             // Other
             RegistryReaderHelper.SaveRegistryKeyValue("13translation_path::-%(|::", Translations.GetTranslationValue(CBX_Language.SelectedIndex));
-            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00translation_changed::-%(|::", CBX_Language.SelectedIndex != 6 ? true : false);
+            RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00translation_changed::-%(|::", CBX_Language.SelectedIndex != 6);
             RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00DisplaySteamProfile::-%(|::", CHK_DisplaySteamProfile.Checked);
             RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00DNT::-%(|::", CHK_DoNotTrack.Checked);
             RegistryReaderHelper.SaveRegistryKeyWithLowercaseValue("00ToggleTaskbarFlash::-%(|::", CHK_FlashTaskbar.Checked);
@@ -114,7 +113,6 @@ namespace ScpSecretLaboratorySettingsChanger
             // Windows Form
             TCTRL_Settings.SelectedIndex = Properties.Settings.Default.MainTabIndex;
             TCTRL_GameSettings.SelectedIndex = Properties.Settings.Default.GameTabIndex;
-            TCTRL_Controls.SelectedIndex = Properties.Settings.Default.ControlsTabIndex;
 
             // Video
             CBX_GraphicsAPI.SelectedIndex = RegistryReaderHelper.ReadRegistryKeyValue<int>("07graphics_api::-%(|::");
@@ -183,7 +181,7 @@ namespace ScpSecretLaboratorySettingsChanger
         private void CHK_RenderLights_CheckedChanged(object sender, EventArgs e)
         {
             CHK_Shadows.Enabled = CHK_RenderLights.Checked;
-            CHK_Shadows.Checked = CHK_RenderLights.Checked ? true : false;
+            CHK_Shadows.Checked = CHK_RenderLights.Checked;
             CBX_ShadowResolution.Enabled = CHK_RenderLights.Checked;
             CBX_ShadowDistance.Enabled = CHK_RenderLights.Checked;
             CBX_VolumetricLights.Enabled = CHK_RenderLights.Checked;

@@ -46,17 +46,5 @@ namespace ScpSecretLaboratorySettingsChanger.Properties {
                 this["GameTabIndex"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int ControlsTabIndex {
-            get {
-                return ((int)(this["ControlsTabIndex"]));
-            }
-            set {
-                this["ControlsTabIndex"] = value;
-            }
-        }
     }
 }
