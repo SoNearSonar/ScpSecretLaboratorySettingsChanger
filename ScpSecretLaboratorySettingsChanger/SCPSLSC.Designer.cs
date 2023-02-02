@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SCPSLSC));
             this.TCTRL_Settings = new System.Windows.Forms.TabControl();
             this.tpgGameSettings = new System.Windows.Forms.TabPage();
             this.TCTRL_GameSettings = new System.Windows.Forms.TabControl();
@@ -1349,6 +1350,7 @@
             this.Controls.Add(this.TCTRL_Settings);
             this.Controls.Add(this.BTN_SaveSettings);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(653, 422);
             this.MinimumSize = new System.Drawing.Size(653, 422);
