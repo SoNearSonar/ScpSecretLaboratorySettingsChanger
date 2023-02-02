@@ -120,6 +120,7 @@
             this.CBX_Language = new System.Windows.Forms.ComboBox();
             this.LBL_Language = new System.Windows.Forms.Label();
             this.TPG_SpawnPreferences = new System.Windows.Forms.TabPage();
+            this.LBL_SpawnPrefNote = new System.Windows.Forms.Label();
             this.LBL_Scp939Pref = new System.Windows.Forms.Label();
             this.LBL_Scp173Pref = new System.Windows.Forms.Label();
             this.LBL_Scp106Pref = new System.Windows.Forms.Label();
@@ -133,7 +134,6 @@
             this.TBR_Scp079Pref = new System.Windows.Forms.TrackBar();
             this.TBR_Scp049Pref = new System.Windows.Forms.TrackBar();
             this.BTN_SaveSettings = new System.Windows.Forms.Button();
-            this.LBL_SpawnPrefNote = new System.Windows.Forms.Label();
             this.TCTRL_Settings.SuspendLayout();
             this.tpgGameSettings.SuspendLayout();
             this.TCTRL_GameSettings.SuspendLayout();
@@ -188,7 +188,7 @@
             this.TCTRL_GameSettings.Name = "TCTRL_GameSettings";
             this.TCTRL_GameSettings.SelectedIndex = 0;
             this.TCTRL_GameSettings.Size = new System.Drawing.Size(607, 291);
-            this.TCTRL_GameSettings.TabIndex = 0;
+            this.TCTRL_GameSettings.TabIndex = 1;
             // 
             // TPG_Video
             // 
@@ -243,7 +243,7 @@
             this.NUD_MotionBlur.Name = "NUD_MotionBlur";
             this.NUD_MotionBlur.ReadOnly = true;
             this.NUD_MotionBlur.Size = new System.Drawing.Size(121, 23);
-            this.NUD_MotionBlur.TabIndex = 35;
+            this.NUD_MotionBlur.TabIndex = 31;
             // 
             // CHK_Decals
             // 
@@ -251,7 +251,7 @@
             this.CHK_Decals.Location = new System.Drawing.Point(470, 16);
             this.CHK_Decals.Name = "CHK_Decals";
             this.CHK_Decals.Size = new System.Drawing.Size(66, 19);
-            this.CHK_Decals.TabIndex = 34;
+            this.CHK_Decals.TabIndex = 19;
             this.CHK_Decals.Text = "Enable?";
             this.CHK_Decals.UseVisualStyleBackColor = true;
             // 
@@ -261,7 +261,7 @@
             this.CHK_Shadows.Location = new System.Drawing.Point(470, 77);
             this.CHK_Shadows.Name = "CHK_Shadows";
             this.CHK_Shadows.Size = new System.Drawing.Size(66, 19);
-            this.CHK_Shadows.TabIndex = 33;
+            this.CHK_Shadows.TabIndex = 23;
             this.CHK_Shadows.Text = "Enable?";
             this.CHK_Shadows.UseVisualStyleBackColor = true;
             // 
@@ -271,7 +271,7 @@
             this.CHK_VSync.Location = new System.Drawing.Point(179, 107);
             this.CHK_VSync.Name = "CHK_VSync";
             this.CHK_VSync.Size = new System.Drawing.Size(66, 19);
-            this.CHK_VSync.TabIndex = 32;
+            this.CHK_VSync.TabIndex = 9;
             this.CHK_VSync.Text = "Enable?";
             this.CHK_VSync.UseVisualStyleBackColor = true;
             this.CHK_VSync.CheckedChanged += new System.EventHandler(this.CHK_VSync_CheckedChanged);
@@ -282,7 +282,7 @@
             this.CHK_Bloom.Location = new System.Drawing.Point(470, 230);
             this.CHK_Bloom.Name = "CHK_Bloom";
             this.CHK_Bloom.Size = new System.Drawing.Size(66, 19);
-            this.CHK_Bloom.TabIndex = 31;
+            this.CHK_Bloom.TabIndex = 33;
             this.CHK_Bloom.Text = "Enable?";
             this.CHK_Bloom.UseVisualStyleBackColor = true;
             // 
@@ -292,7 +292,7 @@
             this.CHK_RenderLights.Location = new System.Drawing.Point(470, 46);
             this.CHK_RenderLights.Name = "CHK_RenderLights";
             this.CHK_RenderLights.Size = new System.Drawing.Size(66, 19);
-            this.CHK_RenderLights.TabIndex = 30;
+            this.CHK_RenderLights.TabIndex = 21;
             this.CHK_RenderLights.Text = "Enable?";
             this.CHK_RenderLights.UseVisualStyleBackColor = true;
             this.CHK_RenderLights.CheckedChanged += new System.EventHandler(this.CHK_RenderLights_CheckedChanged);
@@ -324,7 +324,7 @@
             this.CBX_ShadowDistance.Location = new System.Drawing.Point(440, 136);
             this.CBX_ShadowDistance.Name = "CBX_ShadowDistance";
             this.CBX_ShadowDistance.Size = new System.Drawing.Size(121, 23);
-            this.CBX_ShadowDistance.TabIndex = 28;
+            this.CBX_ShadowDistance.TabIndex = 27;
             // 
             // CBX_ShadowResolution
             // 
@@ -338,7 +338,7 @@
             this.CBX_ShadowResolution.Location = new System.Drawing.Point(440, 105);
             this.CBX_ShadowResolution.Name = "CBX_ShadowResolution";
             this.CBX_ShadowResolution.Size = new System.Drawing.Size(121, 23);
-            this.CBX_ShadowResolution.TabIndex = 27;
+            this.CBX_ShadowResolution.TabIndex = 25;
             // 
             // CBX_AmbientOcclusion
             // 
@@ -351,7 +351,7 @@
             this.CBX_AmbientOcclusion.Location = new System.Drawing.Point(150, 228);
             this.CBX_AmbientOcclusion.Name = "CBX_AmbientOcclusion";
             this.CBX_AmbientOcclusion.Size = new System.Drawing.Size(121, 23);
-            this.CBX_AmbientOcclusion.TabIndex = 23;
+            this.CBX_AmbientOcclusion.TabIndex = 17;
             // 
             // CBX_AntiAliasing
             // 
@@ -364,7 +364,7 @@
             this.CBX_AntiAliasing.Location = new System.Drawing.Point(150, 198);
             this.CBX_AntiAliasing.Name = "CBX_AntiAliasing";
             this.CBX_AntiAliasing.Size = new System.Drawing.Size(121, 23);
-            this.CBX_AntiAliasing.TabIndex = 22;
+            this.CBX_AntiAliasing.TabIndex = 15;
             // 
             // CBX_TextureQuality
             // 
@@ -378,7 +378,7 @@
             this.CBX_TextureQuality.Location = new System.Drawing.Point(150, 167);
             this.CBX_TextureQuality.Name = "CBX_TextureQuality";
             this.CBX_TextureQuality.Size = new System.Drawing.Size(121, 23);
-            this.CBX_TextureQuality.TabIndex = 21;
+            this.CBX_TextureQuality.TabIndex = 13;
             // 
             // CBX_FPSLimit
             // 
@@ -398,7 +398,7 @@
             this.CBX_FPSLimit.Location = new System.Drawing.Point(150, 136);
             this.CBX_FPSLimit.Name = "CBX_FPSLimit";
             this.CBX_FPSLimit.Size = new System.Drawing.Size(121, 23);
-            this.CBX_FPSLimit.TabIndex = 20;
+            this.CBX_FPSLimit.TabIndex = 11;
             // 
             // CBX_WindowMode
             // 
@@ -412,7 +412,7 @@
             this.CBX_WindowMode.Location = new System.Drawing.Point(150, 74);
             this.CBX_WindowMode.Name = "CBX_WindowMode";
             this.CBX_WindowMode.Size = new System.Drawing.Size(121, 23);
-            this.CBX_WindowMode.TabIndex = 18;
+            this.CBX_WindowMode.TabIndex = 7;
             // 
             // CBX_ScreenResolution
             // 
@@ -421,7 +421,7 @@
             this.CBX_ScreenResolution.Location = new System.Drawing.Point(150, 43);
             this.CBX_ScreenResolution.Name = "CBX_ScreenResolution";
             this.CBX_ScreenResolution.Size = new System.Drawing.Size(121, 23);
-            this.CBX_ScreenResolution.TabIndex = 17;
+            this.CBX_ScreenResolution.TabIndex = 5;
             // 
             // CBX_GraphicsAPI
             // 
@@ -436,7 +436,7 @@
             this.CBX_GraphicsAPI.Location = new System.Drawing.Point(150, 13);
             this.CBX_GraphicsAPI.Name = "CBX_GraphicsAPI";
             this.CBX_GraphicsAPI.Size = new System.Drawing.Size(121, 23);
-            this.CBX_GraphicsAPI.TabIndex = 16;
+            this.CBX_GraphicsAPI.TabIndex = 3;
             // 
             // LBL_ShadowResolution
             // 
@@ -444,7 +444,7 @@
             this.LBL_ShadowResolution.Location = new System.Drawing.Point(311, 110);
             this.LBL_ShadowResolution.Name = "LBL_ShadowResolution";
             this.LBL_ShadowResolution.Size = new System.Drawing.Size(111, 15);
-            this.LBL_ShadowResolution.TabIndex = 15;
+            this.LBL_ShadowResolution.TabIndex = 24;
             this.LBL_ShadowResolution.Text = "Shadow Resolution:";
             // 
             // LBL_Shadows
@@ -453,7 +453,7 @@
             this.LBL_Shadows.Location = new System.Drawing.Point(311, 77);
             this.LBL_Shadows.Name = "LBL_Shadows";
             this.LBL_Shadows.Size = new System.Drawing.Size(57, 15);
-            this.LBL_Shadows.TabIndex = 14;
+            this.LBL_Shadows.TabIndex = 22;
             this.LBL_Shadows.Text = "Shadows:";
             // 
             // LBL_RenderLights
@@ -462,7 +462,7 @@
             this.LBL_RenderLights.Location = new System.Drawing.Point(311, 46);
             this.LBL_RenderLights.Name = "LBL_RenderLights";
             this.LBL_RenderLights.Size = new System.Drawing.Size(82, 15);
-            this.LBL_RenderLights.TabIndex = 13;
+            this.LBL_RenderLights.TabIndex = 20;
             this.LBL_RenderLights.Text = "Render Lights:";
             // 
             // LBL_Decals
@@ -471,7 +471,7 @@
             this.LBL_Decals.Location = new System.Drawing.Point(311, 16);
             this.LBL_Decals.Name = "LBL_Decals";
             this.LBL_Decals.Size = new System.Drawing.Size(44, 15);
-            this.LBL_Decals.TabIndex = 12;
+            this.LBL_Decals.TabIndex = 18;
             this.LBL_Decals.Text = "Decals:";
             // 
             // LBL_Bloom
@@ -480,7 +480,7 @@
             this.LBL_Bloom.Location = new System.Drawing.Point(311, 232);
             this.LBL_Bloom.Name = "LBL_Bloom";
             this.LBL_Bloom.Size = new System.Drawing.Size(45, 15);
-            this.LBL_Bloom.TabIndex = 11;
+            this.LBL_Bloom.TabIndex = 32;
             this.LBL_Bloom.Text = "Bloom:";
             // 
             // LBL_MotionBlur
@@ -489,7 +489,7 @@
             this.LBL_MotionBlur.Location = new System.Drawing.Point(311, 202);
             this.LBL_MotionBlur.Name = "LBL_MotionBlur";
             this.LBL_MotionBlur.Size = new System.Drawing.Size(73, 15);
-            this.LBL_MotionBlur.TabIndex = 10;
+            this.LBL_MotionBlur.TabIndex = 30;
             this.LBL_MotionBlur.Text = "Motion Blur:";
             // 
             // LBL_VolumetricLights
@@ -498,7 +498,7 @@
             this.LBL_VolumetricLights.Location = new System.Drawing.Point(311, 171);
             this.LBL_VolumetricLights.Name = "LBL_VolumetricLights";
             this.LBL_VolumetricLights.Size = new System.Drawing.Size(102, 15);
-            this.LBL_VolumetricLights.TabIndex = 9;
+            this.LBL_VolumetricLights.TabIndex = 28;
             this.LBL_VolumetricLights.Text = "Volumetric Lights:";
             // 
             // LBL_ShadowDistance
@@ -507,7 +507,7 @@
             this.LBL_ShadowDistance.Location = new System.Drawing.Point(311, 140);
             this.LBL_ShadowDistance.Name = "LBL_ShadowDistance";
             this.LBL_ShadowDistance.Size = new System.Drawing.Size(100, 15);
-            this.LBL_ShadowDistance.TabIndex = 8;
+            this.LBL_ShadowDistance.TabIndex = 26;
             this.LBL_ShadowDistance.Text = "Shadow Distance:";
             // 
             // LBL_AmbientOcclusion
@@ -516,7 +516,7 @@
             this.LBL_AmbientOcclusion.Location = new System.Drawing.Point(33, 232);
             this.LBL_AmbientOcclusion.Name = "LBL_AmbientOcclusion";
             this.LBL_AmbientOcclusion.Size = new System.Drawing.Size(112, 15);
-            this.LBL_AmbientOcclusion.TabIndex = 7;
+            this.LBL_AmbientOcclusion.TabIndex = 16;
             this.LBL_AmbientOcclusion.Text = "Ambient Occlusion:";
             // 
             // LBL_AntiAliasing
@@ -525,7 +525,7 @@
             this.LBL_AntiAliasing.Location = new System.Drawing.Point(33, 202);
             this.LBL_AntiAliasing.Name = "LBL_AntiAliasing";
             this.LBL_AntiAliasing.Size = new System.Drawing.Size(77, 15);
-            this.LBL_AntiAliasing.TabIndex = 6;
+            this.LBL_AntiAliasing.TabIndex = 14;
             this.LBL_AntiAliasing.Text = "Anti Aliasing:";
             // 
             // LBL_TextureQuality
@@ -534,7 +534,7 @@
             this.LBL_TextureQuality.Location = new System.Drawing.Point(33, 171);
             this.LBL_TextureQuality.Name = "LBL_TextureQuality";
             this.LBL_TextureQuality.Size = new System.Drawing.Size(89, 15);
-            this.LBL_TextureQuality.TabIndex = 5;
+            this.LBL_TextureQuality.TabIndex = 12;
             this.LBL_TextureQuality.Text = "Texture Quality:";
             // 
             // LBL_FPSLimit
@@ -543,7 +543,7 @@
             this.LBL_FPSLimit.Location = new System.Drawing.Point(33, 140);
             this.LBL_FPSLimit.Name = "LBL_FPSLimit";
             this.LBL_FPSLimit.Size = new System.Drawing.Size(59, 15);
-            this.LBL_FPSLimit.TabIndex = 4;
+            this.LBL_FPSLimit.TabIndex = 10;
             this.LBL_FPSLimit.Text = "FPS Limit:";
             // 
             // LBL_VSync
@@ -552,7 +552,7 @@
             this.LBL_VSync.Location = new System.Drawing.Point(33, 110);
             this.LBL_VSync.Name = "LBL_VSync";
             this.LBL_VSync.Size = new System.Drawing.Size(42, 15);
-            this.LBL_VSync.TabIndex = 3;
+            this.LBL_VSync.TabIndex = 8;
             this.LBL_VSync.Text = "VSync:";
             // 
             // LBL_WindowMode
@@ -561,7 +561,7 @@
             this.LBL_WindowMode.Location = new System.Drawing.Point(33, 77);
             this.LBL_WindowMode.Name = "LBL_WindowMode";
             this.LBL_WindowMode.Size = new System.Drawing.Size(88, 15);
-            this.LBL_WindowMode.TabIndex = 2;
+            this.LBL_WindowMode.TabIndex = 6;
             this.LBL_WindowMode.Text = "Window Mode:";
             // 
             // LBL_ScreenResolution
@@ -570,7 +570,7 @@
             this.LBL_ScreenResolution.Location = new System.Drawing.Point(33, 46);
             this.LBL_ScreenResolution.Name = "LBL_ScreenResolution";
             this.LBL_ScreenResolution.Size = new System.Drawing.Size(101, 15);
-            this.LBL_ScreenResolution.TabIndex = 1;
+            this.LBL_ScreenResolution.TabIndex = 4;
             this.LBL_ScreenResolution.Text = "Screen Resolution";
             // 
             // LBL_GraphicsAPI
@@ -579,7 +579,7 @@
             this.LBL_GraphicsAPI.Location = new System.Drawing.Point(33, 16);
             this.LBL_GraphicsAPI.Name = "LBL_GraphicsAPI";
             this.LBL_GraphicsAPI.Size = new System.Drawing.Size(77, 15);
-            this.LBL_GraphicsAPI.TabIndex = 0;
+            this.LBL_GraphicsAPI.TabIndex = 2;
             this.LBL_GraphicsAPI.Text = "Graphics API:";
             // 
             // TPG_Audio
@@ -616,7 +616,7 @@
             this.CHK_MuteSpectators.Location = new System.Drawing.Point(162, 231);
             this.CHK_MuteSpectators.Name = "CHK_MuteSpectators";
             this.CHK_MuteSpectators.Size = new System.Drawing.Size(66, 19);
-            this.CHK_MuteSpectators.TabIndex = 40;
+            this.CHK_MuteSpectators.TabIndex = 43;
             this.CHK_MuteSpectators.Text = "Enable?";
             this.CHK_MuteSpectators.UseVisualStyleBackColor = true;
             // 
@@ -626,7 +626,7 @@
             this.LBL_MuteSpectators.Location = new System.Drawing.Point(19, 231);
             this.LBL_MuteSpectators.Name = "LBL_MuteSpectators";
             this.LBL_MuteSpectators.Size = new System.Drawing.Size(96, 15);
-            this.LBL_MuteSpectators.TabIndex = 39;
+            this.LBL_MuteSpectators.TabIndex = 42;
             this.LBL_MuteSpectators.Text = "Mute Spectators:";
             // 
             // CHK_EnableNoiseReduction
@@ -635,7 +635,7 @@
             this.CHK_EnableNoiseReduction.Location = new System.Drawing.Point(463, 186);
             this.CHK_EnableNoiseReduction.Name = "CHK_EnableNoiseReduction";
             this.CHK_EnableNoiseReduction.Size = new System.Drawing.Size(66, 19);
-            this.CHK_EnableNoiseReduction.TabIndex = 38;
+            this.CHK_EnableNoiseReduction.TabIndex = 50;
             this.CHK_EnableNoiseReduction.Text = "Enable?";
             this.CHK_EnableNoiseReduction.UseVisualStyleBackColor = true;
             // 
@@ -645,7 +645,7 @@
             this.LBL_NoiseReduction.Location = new System.Drawing.Point(298, 187);
             this.LBL_NoiseReduction.Name = "LBL_NoiseReduction";
             this.LBL_NoiseReduction.Size = new System.Drawing.Size(97, 15);
-            this.LBL_NoiseReduction.TabIndex = 37;
+            this.LBL_NoiseReduction.TabIndex = 49;
             this.LBL_NoiseReduction.Text = "Noise Reduction:";
             // 
             // CBX_InputDevice
@@ -657,7 +657,7 @@
             this.CBX_InputDevice.Location = new System.Drawing.Point(415, 134);
             this.CBX_InputDevice.Name = "CBX_InputDevice";
             this.CBX_InputDevice.Size = new System.Drawing.Size(164, 23);
-            this.CBX_InputDevice.TabIndex = 36;
+            this.CBX_InputDevice.TabIndex = 48;
             // 
             // LBL_InputDevice
             // 
@@ -665,7 +665,7 @@
             this.LBL_InputDevice.Location = new System.Drawing.Point(298, 137);
             this.LBL_InputDevice.Name = "LBL_InputDevice";
             this.LBL_InputDevice.Size = new System.Drawing.Size(76, 15);
-            this.LBL_InputDevice.TabIndex = 35;
+            this.LBL_InputDevice.TabIndex = 47;
             this.LBL_InputDevice.Text = "Input Device:";
             // 
             // CBX_MenuTheme
@@ -681,7 +681,7 @@
             this.CBX_MenuTheme.Location = new System.Drawing.Point(415, 85);
             this.CBX_MenuTheme.Name = "CBX_MenuTheme";
             this.CBX_MenuTheme.Size = new System.Drawing.Size(164, 23);
-            this.CBX_MenuTheme.TabIndex = 29;
+            this.CBX_MenuTheme.TabIndex = 47;
             // 
             // LBL_MenuTheme
             // 
@@ -689,7 +689,7 @@
             this.LBL_MenuTheme.Location = new System.Drawing.Point(298, 88);
             this.LBL_MenuTheme.Name = "LBL_MenuTheme";
             this.LBL_MenuTheme.Size = new System.Drawing.Size(80, 15);
-            this.LBL_MenuTheme.TabIndex = 28;
+            this.LBL_MenuTheme.TabIndex = 46;
             this.LBL_MenuTheme.Text = "Menu Theme:";
             // 
             // LBL_InterfaceVolume
@@ -698,7 +698,7 @@
             this.LBL_InterfaceVolume.Location = new System.Drawing.Point(298, 34);
             this.LBL_InterfaceVolume.Name = "LBL_InterfaceVolume";
             this.LBL_InterfaceVolume.Size = new System.Drawing.Size(99, 15);
-            this.LBL_InterfaceVolume.TabIndex = 9;
+            this.LBL_InterfaceVolume.TabIndex = 44;
             this.LBL_InterfaceVolume.Text = "Interface Volume:";
             // 
             // LBL_MenuMusic
@@ -707,7 +707,7 @@
             this.LBL_MenuMusic.Location = new System.Drawing.Point(19, 186);
             this.LBL_MenuMusic.Name = "LBL_MenuMusic";
             this.LBL_MenuMusic.Size = new System.Drawing.Size(76, 15);
-            this.LBL_MenuMusic.TabIndex = 8;
+            this.LBL_MenuMusic.TabIndex = 40;
             this.LBL_MenuMusic.Text = "Menu Music:";
             // 
             // LBL_VoiceChat
@@ -716,7 +716,7 @@
             this.LBL_VoiceChat.Location = new System.Drawing.Point(19, 136);
             this.LBL_VoiceChat.Name = "LBL_VoiceChat";
             this.LBL_VoiceChat.Size = new System.Drawing.Size(66, 15);
-            this.LBL_VoiceChat.TabIndex = 7;
+            this.LBL_VoiceChat.TabIndex = 38;
             this.LBL_VoiceChat.Text = "Voice Chat:";
             // 
             // LBL_SoundEffects
@@ -725,7 +725,7 @@
             this.LBL_SoundEffects.Location = new System.Drawing.Point(19, 85);
             this.LBL_SoundEffects.Name = "LBL_SoundEffects";
             this.LBL_SoundEffects.Size = new System.Drawing.Size(82, 15);
-            this.LBL_SoundEffects.TabIndex = 6;
+            this.LBL_SoundEffects.TabIndex = 36;
             this.LBL_SoundEffects.Text = "Sound Effects:";
             // 
             // LBL_MasterVolume
@@ -734,7 +734,7 @@
             this.LBL_MasterVolume.Location = new System.Drawing.Point(19, 34);
             this.LBL_MasterVolume.Name = "LBL_MasterVolume";
             this.LBL_MasterVolume.Size = new System.Drawing.Size(89, 15);
-            this.LBL_MasterVolume.TabIndex = 5;
+            this.LBL_MasterVolume.TabIndex = 34;
             this.LBL_MasterVolume.Text = "Master Volume:";
             // 
             // TBR_InterfaceVolume
@@ -743,7 +743,7 @@
             this.TBR_InterfaceVolume.Maximum = 100;
             this.TBR_InterfaceVolume.Name = "TBR_InterfaceVolume";
             this.TBR_InterfaceVolume.Size = new System.Drawing.Size(164, 45);
-            this.TBR_InterfaceVolume.TabIndex = 4;
+            this.TBR_InterfaceVolume.TabIndex = 45;
             this.TBR_InterfaceVolume.TickFrequency = 10;
             // 
             // TBR_MenuMusicVolume
@@ -752,7 +752,7 @@
             this.TBR_MenuMusicVolume.Maximum = 100;
             this.TBR_MenuMusicVolume.Name = "TBR_MenuMusicVolume";
             this.TBR_MenuMusicVolume.Size = new System.Drawing.Size(164, 45);
-            this.TBR_MenuMusicVolume.TabIndex = 3;
+            this.TBR_MenuMusicVolume.TabIndex = 41;
             this.TBR_MenuMusicVolume.TickFrequency = 10;
             // 
             // TBR_VoiceChatVolume
@@ -761,7 +761,7 @@
             this.TBR_VoiceChatVolume.Maximum = 100;
             this.TBR_VoiceChatVolume.Name = "TBR_VoiceChatVolume";
             this.TBR_VoiceChatVolume.Size = new System.Drawing.Size(164, 45);
-            this.TBR_VoiceChatVolume.TabIndex = 2;
+            this.TBR_VoiceChatVolume.TabIndex = 39;
             this.TBR_VoiceChatVolume.TickFrequency = 10;
             // 
             // TBR_SoundEffectsVolume
@@ -770,7 +770,7 @@
             this.TBR_SoundEffectsVolume.Maximum = 100;
             this.TBR_SoundEffectsVolume.Name = "TBR_SoundEffectsVolume";
             this.TBR_SoundEffectsVolume.Size = new System.Drawing.Size(164, 45);
-            this.TBR_SoundEffectsVolume.TabIndex = 1;
+            this.TBR_SoundEffectsVolume.TabIndex = 37;
             this.TBR_SoundEffectsVolume.TickFrequency = 10;
             // 
             // TBR_MasterVolume
@@ -779,7 +779,7 @@
             this.TBR_MasterVolume.Maximum = 100;
             this.TBR_MasterVolume.Name = "TBR_MasterVolume";
             this.TBR_MasterVolume.Size = new System.Drawing.Size(164, 45);
-            this.TBR_MasterVolume.TabIndex = 0;
+            this.TBR_MasterVolume.TabIndex = 35;
             this.TBR_MasterVolume.TickFrequency = 10;
             // 
             // TPG_Gameplay
@@ -824,7 +824,7 @@
             this.CHK_DisplayExactHP.Location = new System.Drawing.Point(173, 122);
             this.CHK_DisplayExactHP.Name = "CHK_DisplayExactHP";
             this.CHK_DisplayExactHP.Size = new System.Drawing.Size(66, 19);
-            this.CHK_DisplayExactHP.TabIndex = 105;
+            this.CHK_DisplayExactHP.TabIndex = 58;
             this.CHK_DisplayExactHP.Text = "Enable?";
             this.CHK_DisplayExactHP.UseVisualStyleBackColor = true;
             // 
@@ -834,7 +834,7 @@
             this.CHK_PublicLobby.Location = new System.Drawing.Point(173, 184);
             this.CHK_PublicLobby.Name = "CHK_PublicLobby";
             this.CHK_PublicLobby.Size = new System.Drawing.Size(66, 19);
-            this.CHK_PublicLobby.TabIndex = 104;
+            this.CHK_PublicLobby.TabIndex = 62;
             this.CHK_PublicLobby.Text = "Enable?";
             this.CHK_PublicLobby.UseVisualStyleBackColor = true;
             // 
@@ -844,7 +844,7 @@
             this.CHK_RichPresence.Location = new System.Drawing.Point(173, 153);
             this.CHK_RichPresence.Name = "CHK_RichPresence";
             this.CHK_RichPresence.Size = new System.Drawing.Size(66, 19);
-            this.CHK_RichPresence.TabIndex = 103;
+            this.CHK_RichPresence.TabIndex = 60;
             this.CHK_RichPresence.Text = "Enable?";
             this.CHK_RichPresence.UseVisualStyleBackColor = true;
             // 
@@ -854,7 +854,7 @@
             this.CHK_HeadBob.Location = new System.Drawing.Point(173, 59);
             this.CHK_HeadBob.Name = "CHK_HeadBob";
             this.CHK_HeadBob.Size = new System.Drawing.Size(66, 19);
-            this.CHK_HeadBob.TabIndex = 101;
+            this.CHK_HeadBob.TabIndex = 54;
             this.CHK_HeadBob.Text = "Enable?";
             this.CHK_HeadBob.UseVisualStyleBackColor = true;
             // 
@@ -864,37 +864,37 @@
             this.CHK_FastIntroFade.Location = new System.Drawing.Point(173, 28);
             this.CHK_FastIntroFade.Name = "CHK_FastIntroFade";
             this.CHK_FastIntroFade.Size = new System.Drawing.Size(66, 19);
-            this.CHK_FastIntroFade.TabIndex = 100;
+            this.CHK_FastIntroFade.TabIndex = 52;
             this.CHK_FastIntroFade.Text = "Enable?";
             this.CHK_FastIntroFade.UseVisualStyleBackColor = true;
             // 
             // CHK_Scp079PostProcessing
             // 
             this.CHK_Scp079PostProcessing.AutoSize = true;
-            this.CHK_Scp079PostProcessing.Location = new System.Drawing.Point(484, 93);
+            this.CHK_Scp079PostProcessing.Location = new System.Drawing.Point(486, 93);
             this.CHK_Scp079PostProcessing.Name = "CHK_Scp079PostProcessing";
             this.CHK_Scp079PostProcessing.Size = new System.Drawing.Size(66, 19);
-            this.CHK_Scp079PostProcessing.TabIndex = 99;
+            this.CHK_Scp079PostProcessing.TabIndex = 70;
             this.CHK_Scp079PostProcessing.Text = "Enable?";
             this.CHK_Scp079PostProcessing.UseVisualStyleBackColor = true;
             // 
             // CHK_DarkMode
             // 
             this.CHK_DarkMode.AutoSize = true;
-            this.CHK_DarkMode.Location = new System.Drawing.Point(484, 154);
+            this.CHK_DarkMode.Location = new System.Drawing.Point(486, 154);
             this.CHK_DarkMode.Name = "CHK_DarkMode";
             this.CHK_DarkMode.Size = new System.Drawing.Size(66, 19);
-            this.CHK_DarkMode.TabIndex = 98;
+            this.CHK_DarkMode.TabIndex = 74;
             this.CHK_DarkMode.Text = "Enable?";
             this.CHK_DarkMode.UseVisualStyleBackColor = true;
             // 
             // CHK_Subtitles
             // 
             this.CHK_Subtitles.AutoSize = true;
-            this.CHK_Subtitles.Location = new System.Drawing.Point(484, 123);
+            this.CHK_Subtitles.Location = new System.Drawing.Point(486, 123);
             this.CHK_Subtitles.Name = "CHK_Subtitles";
             this.CHK_Subtitles.Size = new System.Drawing.Size(66, 19);
-            this.CHK_Subtitles.TabIndex = 97;
+            this.CHK_Subtitles.TabIndex = 72;
             this.CHK_Subtitles.Text = "Enable?";
             this.CHK_Subtitles.UseVisualStyleBackColor = true;
             // 
@@ -904,7 +904,7 @@
             this.LBL_RagdollCleanup.Location = new System.Drawing.Point(304, 187);
             this.LBL_RagdollCleanup.Name = "LBL_RagdollCleanup";
             this.LBL_RagdollCleanup.Size = new System.Drawing.Size(126, 15);
-            this.LBL_RagdollCleanup.TabIndex = 96;
+            this.LBL_RagdollCleanup.TabIndex = 75;
             this.LBL_RagdollCleanup.Text = "Ragdoll Cleanup Time:";
             // 
             // TBR_RagdollCleanupTime
@@ -913,7 +913,7 @@
             this.TBR_RagdollCleanupTime.Maximum = 600;
             this.TBR_RagdollCleanupTime.Name = "TBR_RagdollCleanupTime";
             this.TBR_RagdollCleanupTime.Size = new System.Drawing.Size(105, 45);
-            this.TBR_RagdollCleanupTime.TabIndex = 95;
+            this.TBR_RagdollCleanupTime.TabIndex = 76;
             this.TBR_RagdollCleanupTime.TickFrequency = 60;
             // 
             // CHK_HideIPAddress
@@ -922,17 +922,17 @@
             this.CHK_HideIPAddress.Location = new System.Drawing.Point(173, 216);
             this.CHK_HideIPAddress.Name = "CHK_HideIPAddress";
             this.CHK_HideIPAddress.Size = new System.Drawing.Size(66, 19);
-            this.CHK_HideIPAddress.TabIndex = 94;
+            this.CHK_HideIPAddress.TabIndex = 64;
             this.CHK_HideIPAddress.Text = "Enable?";
             this.CHK_HideIPAddress.UseVisualStyleBackColor = true;
             // 
             // CHK_Scp079ToggleView
             // 
             this.CHK_Scp079ToggleView.AutoSize = true;
-            this.CHK_Scp079ToggleView.Location = new System.Drawing.Point(484, 62);
+            this.CHK_Scp079ToggleView.Location = new System.Drawing.Point(486, 62);
             this.CHK_Scp079ToggleView.Name = "CHK_Scp079ToggleView";
             this.CHK_Scp079ToggleView.Size = new System.Drawing.Size(66, 19);
-            this.CHK_Scp079ToggleView.TabIndex = 93;
+            this.CHK_Scp079ToggleView.TabIndex = 68;
             this.CHK_Scp079ToggleView.Text = "Enable?";
             this.CHK_Scp079ToggleView.UseVisualStyleBackColor = true;
             // 
@@ -942,17 +942,17 @@
             this.CHK_ToggleSprint.Location = new System.Drawing.Point(173, 90);
             this.CHK_ToggleSprint.Name = "CHK_ToggleSprint";
             this.CHK_ToggleSprint.Size = new System.Drawing.Size(66, 19);
-            this.CHK_ToggleSprint.TabIndex = 92;
+            this.CHK_ToggleSprint.TabIndex = 56;
             this.CHK_ToggleSprint.Text = "Enable?";
             this.CHK_ToggleSprint.UseVisualStyleBackColor = true;
             // 
             // CHK_ToggleSearch
             // 
             this.CHK_ToggleSearch.AutoSize = true;
-            this.CHK_ToggleSearch.Location = new System.Drawing.Point(484, 31);
+            this.CHK_ToggleSearch.Location = new System.Drawing.Point(486, 31);
             this.CHK_ToggleSearch.Name = "CHK_ToggleSearch";
             this.CHK_ToggleSearch.Size = new System.Drawing.Size(66, 19);
-            this.CHK_ToggleSearch.TabIndex = 91;
+            this.CHK_ToggleSearch.TabIndex = 66;
             this.CHK_ToggleSearch.Text = "Enable?";
             this.CHK_ToggleSearch.UseVisualStyleBackColor = true;
             // 
@@ -962,7 +962,7 @@
             this.LBL_Scp079PostProcessing.Location = new System.Drawing.Point(304, 95);
             this.LBL_Scp079PostProcessing.Name = "LBL_Scp079PostProcessing";
             this.LBL_Scp079PostProcessing.Size = new System.Drawing.Size(148, 15);
-            this.LBL_Scp079PostProcessing.TabIndex = 90;
+            this.LBL_Scp079PostProcessing.TabIndex = 69;
             this.LBL_Scp079PostProcessing.Text = "SCP-079 - Post Processing:\r\n";
             // 
             // LBL_079ToggleView
@@ -971,7 +971,7 @@
             this.LBL_079ToggleView.Location = new System.Drawing.Point(304, 62);
             this.LBL_079ToggleView.Name = "LBL_079ToggleView";
             this.LBL_079ToggleView.Size = new System.Drawing.Size(162, 15);
-            this.LBL_079ToggleView.TabIndex = 89;
+            this.LBL_079ToggleView.TabIndex = 67;
             this.LBL_079ToggleView.Text = "SCP-079 - Toggle View Mode:";
             // 
             // LBL_ToggleSearch
@@ -980,7 +980,7 @@
             this.LBL_ToggleSearch.Location = new System.Drawing.Point(304, 31);
             this.LBL_ToggleSearch.Name = "LBL_ToggleSearch";
             this.LBL_ToggleSearch.Size = new System.Drawing.Size(83, 15);
-            this.LBL_ToggleSearch.TabIndex = 88;
+            this.LBL_ToggleSearch.TabIndex = 65;
             this.LBL_ToggleSearch.Text = "Toggle Search:";
             // 
             // LBL_HideIP
@@ -989,7 +989,7 @@
             this.LBL_HideIP.Location = new System.Drawing.Point(29, 216);
             this.LBL_HideIP.Name = "LBL_HideIP";
             this.LBL_HideIP.Size = new System.Drawing.Size(100, 15);
-            this.LBL_HideIP.TabIndex = 87;
+            this.LBL_HideIP.TabIndex = 63;
             this.LBL_HideIP.Text = "Hide IP Adddress:";
             // 
             // LBL_DarkMode
@@ -998,7 +998,7 @@
             this.LBL_DarkMode.Location = new System.Drawing.Point(304, 156);
             this.LBL_DarkMode.Name = "LBL_DarkMode";
             this.LBL_DarkMode.Size = new System.Drawing.Size(106, 15);
-            this.LBL_DarkMode.TabIndex = 86;
+            this.LBL_DarkMode.TabIndex = 73;
             this.LBL_DarkMode.Text = "Toggle Dark Mode:";
             // 
             // LBL_Subtitles
@@ -1007,7 +1007,7 @@
             this.LBL_Subtitles.Location = new System.Drawing.Point(304, 125);
             this.LBL_Subtitles.Name = "LBL_Subtitles";
             this.LBL_Subtitles.Size = new System.Drawing.Size(93, 15);
-            this.LBL_Subtitles.TabIndex = 85;
+            this.LBL_Subtitles.TabIndex = 71;
             this.LBL_Subtitles.Text = "Toggle Subtitles:";
             // 
             // LBL_PublicLobby
@@ -1016,7 +1016,7 @@
             this.LBL_PublicLobby.Location = new System.Drawing.Point(29, 185);
             this.LBL_PublicLobby.Name = "LBL_PublicLobby";
             this.LBL_PublicLobby.Size = new System.Drawing.Size(79, 15);
-            this.LBL_PublicLobby.TabIndex = 84;
+            this.LBL_PublicLobby.TabIndex = 61;
             this.LBL_PublicLobby.Text = "Public Lobby:";
             // 
             // LBL_RichPresence
@@ -1025,7 +1025,7 @@
             this.LBL_RichPresence.Location = new System.Drawing.Point(29, 154);
             this.LBL_RichPresence.Name = "LBL_RichPresence";
             this.LBL_RichPresence.Size = new System.Drawing.Size(80, 15);
-            this.LBL_RichPresence.TabIndex = 83;
+            this.LBL_RichPresence.TabIndex = 59;
             this.LBL_RichPresence.Text = "Rich Presence";
             // 
             // LBL_DisplayExactHP
@@ -1034,7 +1034,7 @@
             this.LBL_DisplayExactHP.Location = new System.Drawing.Point(29, 123);
             this.LBL_DisplayExactHP.Name = "LBL_DisplayExactHP";
             this.LBL_DisplayExactHP.Size = new System.Drawing.Size(129, 15);
-            this.LBL_DisplayExactHP.TabIndex = 82;
+            this.LBL_DisplayExactHP.TabIndex = 57;
             this.LBL_DisplayExactHP.Text = "Display Exact HP Value:";
             // 
             // LBL_ToggleSprint
@@ -1043,7 +1043,7 @@
             this.LBL_ToggleSprint.Location = new System.Drawing.Point(29, 92);
             this.LBL_ToggleSprint.Name = "LBL_ToggleSprint";
             this.LBL_ToggleSprint.Size = new System.Drawing.Size(79, 15);
-            this.LBL_ToggleSprint.TabIndex = 81;
+            this.LBL_ToggleSprint.TabIndex = 55;
             this.LBL_ToggleSprint.Text = "Toggle Sprint:";
             // 
             // LBL_HeadBob
@@ -1052,7 +1052,7 @@
             this.LBL_HeadBob.Location = new System.Drawing.Point(29, 60);
             this.LBL_HeadBob.Name = "LBL_HeadBob";
             this.LBL_HeadBob.Size = new System.Drawing.Size(62, 15);
-            this.LBL_HeadBob.TabIndex = 80;
+            this.LBL_HeadBob.TabIndex = 53;
             this.LBL_HeadBob.Text = "Head Bob:";
             // 
             // LBL_FastIntroFade
@@ -1061,7 +1061,7 @@
             this.LBL_FastIntroFade.Location = new System.Drawing.Point(29, 29);
             this.LBL_FastIntroFade.Name = "LBL_FastIntroFade";
             this.LBL_FastIntroFade.Size = new System.Drawing.Size(87, 15);
-            this.LBL_FastIntroFade.TabIndex = 79;
+            this.LBL_FastIntroFade.TabIndex = 51;
             this.LBL_FastIntroFade.Text = "Fast Intro Fade:";
             // 
             // TPG_Other
@@ -1085,10 +1085,10 @@
             // CHK_FlashTaskbar
             // 
             this.CHK_FlashTaskbar.AutoSize = true;
-            this.CHK_FlashTaskbar.Location = new System.Drawing.Point(324, 192);
+            this.CHK_FlashTaskbar.Location = new System.Drawing.Point(328, 192);
             this.CHK_FlashTaskbar.Name = "CHK_FlashTaskbar";
             this.CHK_FlashTaskbar.Size = new System.Drawing.Size(66, 19);
-            this.CHK_FlashTaskbar.TabIndex = 38;
+            this.CHK_FlashTaskbar.TabIndex = 84;
             this.CHK_FlashTaskbar.Text = "Enable?";
             this.CHK_FlashTaskbar.UseVisualStyleBackColor = true;
             // 
@@ -1098,16 +1098,16 @@
             this.LBL_FlashTaskbar.Location = new System.Drawing.Point(101, 196);
             this.LBL_FlashTaskbar.Name = "LBL_FlashTaskbar";
             this.LBL_FlashTaskbar.Size = new System.Drawing.Size(136, 15);
-            this.LBL_FlashTaskbar.TabIndex = 37;
+            this.LBL_FlashTaskbar.TabIndex = 83;
             this.LBL_FlashTaskbar.Text = "Flash Taskbar On Spawn:";
             // 
             // CHK_DoNotTrack
             // 
             this.CHK_DoNotTrack.AutoSize = true;
-            this.CHK_DoNotTrack.Location = new System.Drawing.Point(324, 144);
+            this.CHK_DoNotTrack.Location = new System.Drawing.Point(328, 144);
             this.CHK_DoNotTrack.Name = "CHK_DoNotTrack";
             this.CHK_DoNotTrack.Size = new System.Drawing.Size(66, 19);
-            this.CHK_DoNotTrack.TabIndex = 36;
+            this.CHK_DoNotTrack.TabIndex = 82;
             this.CHK_DoNotTrack.Text = "Enable?";
             this.CHK_DoNotTrack.UseVisualStyleBackColor = true;
             // 
@@ -1117,16 +1117,16 @@
             this.LBL_DoNotTrack.Location = new System.Drawing.Point(101, 148);
             this.LBL_DoNotTrack.Name = "LBL_DoNotTrack";
             this.LBL_DoNotTrack.Size = new System.Drawing.Size(111, 15);
-            this.LBL_DoNotTrack.TabIndex = 35;
+            this.LBL_DoNotTrack.TabIndex = 81;
             this.LBL_DoNotTrack.Text = "Do Not track (DNT):";
             // 
             // CHK_DisplaySteamProfile
             // 
             this.CHK_DisplaySteamProfile.AutoSize = true;
-            this.CHK_DisplaySteamProfile.Location = new System.Drawing.Point(324, 96);
+            this.CHK_DisplaySteamProfile.Location = new System.Drawing.Point(328, 96);
             this.CHK_DisplaySteamProfile.Name = "CHK_DisplaySteamProfile";
             this.CHK_DisplaySteamProfile.Size = new System.Drawing.Size(66, 19);
-            this.CHK_DisplaySteamProfile.TabIndex = 34;
+            this.CHK_DisplaySteamProfile.TabIndex = 80;
             this.CHK_DisplaySteamProfile.Text = "Enable?";
             this.CHK_DisplaySteamProfile.UseVisualStyleBackColor = true;
             // 
@@ -1136,7 +1136,7 @@
             this.LBL_DisplaySteamProfile.Location = new System.Drawing.Point(101, 100);
             this.LBL_DisplaySteamProfile.Name = "LBL_DisplaySteamProfile";
             this.LBL_DisplaySteamProfile.Size = new System.Drawing.Size(121, 15);
-            this.LBL_DisplaySteamProfile.TabIndex = 33;
+            this.LBL_DisplaySteamProfile.TabIndex = 79;
             this.LBL_DisplaySteamProfile.Text = "Display Steam Profile:";
             // 
             // CBX_Language
@@ -1180,7 +1180,7 @@
             this.CBX_Language.Location = new System.Drawing.Point(218, 47);
             this.CBX_Language.Name = "CBX_Language";
             this.CBX_Language.Size = new System.Drawing.Size(285, 23);
-            this.CBX_Language.TabIndex = 18;
+            this.CBX_Language.TabIndex = 78;
             // 
             // LBL_Language
             // 
@@ -1188,7 +1188,7 @@
             this.LBL_Language.Location = new System.Drawing.Point(101, 50);
             this.LBL_Language.Name = "LBL_Language";
             this.LBL_Language.Size = new System.Drawing.Size(59, 15);
-            this.LBL_Language.TabIndex = 17;
+            this.LBL_Language.TabIndex = 77;
             this.LBL_Language.Text = "Language";
             // 
             // TPG_SpawnPreferences
@@ -1214,132 +1214,132 @@
             this.TPG_SpawnPreferences.Text = "Spawn Preferences";
             this.TPG_SpawnPreferences.UseVisualStyleBackColor = true;
             // 
+            // LBL_SpawnPrefNote
+            // 
+            this.LBL_SpawnPrefNote.AutoSize = true;
+            this.LBL_SpawnPrefNote.Location = new System.Drawing.Point(166, 243);
+            this.LBL_SpawnPrefNote.Name = "LBL_SpawnPrefNote";
+            this.LBL_SpawnPrefNote.Size = new System.Drawing.Size(292, 15);
+            this.LBL_SpawnPrefNote.TabIndex = 97;
+            this.LBL_SpawnPrefNote.Text = "Slider: Left = Less Preference, Right = More Preference";
+            // 
             // LBL_Scp939Pref
             // 
             this.LBL_Scp939Pref.AutoSize = true;
-            this.LBL_Scp939Pref.Location = new System.Drawing.Point(325, 172);
+            this.LBL_Scp939Pref.Location = new System.Drawing.Point(321, 172);
             this.LBL_Scp939Pref.Name = "LBL_Scp939Pref";
             this.LBL_Scp939Pref.Size = new System.Drawing.Size(54, 15);
-            this.LBL_Scp939Pref.TabIndex = 19;
+            this.LBL_Scp939Pref.TabIndex = 95;
             this.LBL_Scp939Pref.Text = "SCP-939:";
             // 
             // LBL_Scp173Pref
             // 
             this.LBL_Scp173Pref.AutoSize = true;
-            this.LBL_Scp173Pref.Location = new System.Drawing.Point(325, 121);
+            this.LBL_Scp173Pref.Location = new System.Drawing.Point(321, 121);
             this.LBL_Scp173Pref.Name = "LBL_Scp173Pref";
             this.LBL_Scp173Pref.Size = new System.Drawing.Size(54, 15);
-            this.LBL_Scp173Pref.TabIndex = 18;
+            this.LBL_Scp173Pref.TabIndex = 93;
             this.LBL_Scp173Pref.Text = "SCP-173:";
             // 
             // LBL_Scp106Pref
             // 
             this.LBL_Scp106Pref.AutoSize = true;
-            this.LBL_Scp106Pref.Location = new System.Drawing.Point(325, 70);
+            this.LBL_Scp106Pref.Location = new System.Drawing.Point(321, 70);
             this.LBL_Scp106Pref.Name = "LBL_Scp106Pref";
             this.LBL_Scp106Pref.Size = new System.Drawing.Size(54, 15);
-            this.LBL_Scp106Pref.TabIndex = 17;
+            this.LBL_Scp106Pref.TabIndex = 91;
             this.LBL_Scp106Pref.Text = "SCP-106:";
             // 
             // TBR_Scp939Pref
             // 
-            this.TBR_Scp939Pref.Location = new System.Drawing.Point(420, 159);
+            this.TBR_Scp939Pref.Location = new System.Drawing.Point(416, 159);
             this.TBR_Scp939Pref.Maximum = 5;
             this.TBR_Scp939Pref.Minimum = -5;
             this.TBR_Scp939Pref.Name = "TBR_Scp939Pref";
             this.TBR_Scp939Pref.Size = new System.Drawing.Size(164, 45);
-            this.TBR_Scp939Pref.TabIndex = 16;
+            this.TBR_Scp939Pref.TabIndex = 96;
             // 
             // TBR_Scp173Pref
             // 
-            this.TBR_Scp173Pref.Location = new System.Drawing.Point(420, 108);
+            this.TBR_Scp173Pref.Location = new System.Drawing.Point(416, 108);
             this.TBR_Scp173Pref.Maximum = 5;
             this.TBR_Scp173Pref.Minimum = -5;
             this.TBR_Scp173Pref.Name = "TBR_Scp173Pref";
             this.TBR_Scp173Pref.Size = new System.Drawing.Size(164, 45);
-            this.TBR_Scp173Pref.TabIndex = 15;
+            this.TBR_Scp173Pref.TabIndex = 94;
             // 
             // TBR_Scp106Pref
             // 
-            this.TBR_Scp106Pref.Location = new System.Drawing.Point(420, 57);
+            this.TBR_Scp106Pref.Location = new System.Drawing.Point(416, 57);
             this.TBR_Scp106Pref.Maximum = 5;
             this.TBR_Scp106Pref.Minimum = -5;
             this.TBR_Scp106Pref.Name = "TBR_Scp106Pref";
             this.TBR_Scp106Pref.Size = new System.Drawing.Size(164, 45);
-            this.TBR_Scp106Pref.TabIndex = 14;
+            this.TBR_Scp106Pref.TabIndex = 92;
             // 
             // LBL_Scp096Pref
             // 
             this.LBL_Scp096Pref.AutoSize = true;
-            this.LBL_Scp096Pref.Location = new System.Drawing.Point(41, 172);
+            this.LBL_Scp096Pref.Location = new System.Drawing.Point(37, 172);
             this.LBL_Scp096Pref.Name = "LBL_Scp096Pref";
             this.LBL_Scp096Pref.Size = new System.Drawing.Size(54, 15);
-            this.LBL_Scp096Pref.TabIndex = 13;
+            this.LBL_Scp096Pref.TabIndex = 89;
             this.LBL_Scp096Pref.Text = "SCP-096:";
             // 
             // LBL_Scp079Pref
             // 
             this.LBL_Scp079Pref.AutoSize = true;
-            this.LBL_Scp079Pref.Location = new System.Drawing.Point(41, 121);
+            this.LBL_Scp079Pref.Location = new System.Drawing.Point(37, 121);
             this.LBL_Scp079Pref.Name = "LBL_Scp079Pref";
             this.LBL_Scp079Pref.Size = new System.Drawing.Size(54, 15);
-            this.LBL_Scp079Pref.TabIndex = 12;
+            this.LBL_Scp079Pref.TabIndex = 87;
             this.LBL_Scp079Pref.Text = "SCP-079:";
             // 
             // LBL_Scp049Pref
             // 
             this.LBL_Scp049Pref.AutoSize = true;
-            this.LBL_Scp049Pref.Location = new System.Drawing.Point(41, 70);
+            this.LBL_Scp049Pref.Location = new System.Drawing.Point(37, 70);
             this.LBL_Scp049Pref.Name = "LBL_Scp049Pref";
             this.LBL_Scp049Pref.Size = new System.Drawing.Size(54, 15);
-            this.LBL_Scp049Pref.TabIndex = 11;
+            this.LBL_Scp049Pref.TabIndex = 85;
             this.LBL_Scp049Pref.Text = "SCP-049:";
             // 
             // TBR_Scp096Pref
             // 
-            this.TBR_Scp096Pref.Location = new System.Drawing.Point(136, 159);
+            this.TBR_Scp096Pref.Location = new System.Drawing.Point(132, 159);
             this.TBR_Scp096Pref.Maximum = 5;
             this.TBR_Scp096Pref.Minimum = -5;
             this.TBR_Scp096Pref.Name = "TBR_Scp096Pref";
             this.TBR_Scp096Pref.Size = new System.Drawing.Size(164, 45);
-            this.TBR_Scp096Pref.TabIndex = 10;
+            this.TBR_Scp096Pref.TabIndex = 90;
             // 
             // TBR_Scp079Pref
             // 
-            this.TBR_Scp079Pref.Location = new System.Drawing.Point(136, 108);
+            this.TBR_Scp079Pref.Location = new System.Drawing.Point(132, 108);
             this.TBR_Scp079Pref.Maximum = 5;
             this.TBR_Scp079Pref.Minimum = -5;
             this.TBR_Scp079Pref.Name = "TBR_Scp079Pref";
             this.TBR_Scp079Pref.Size = new System.Drawing.Size(164, 45);
-            this.TBR_Scp079Pref.TabIndex = 9;
+            this.TBR_Scp079Pref.TabIndex = 88;
             // 
             // TBR_Scp049Pref
             // 
-            this.TBR_Scp049Pref.Location = new System.Drawing.Point(136, 57);
+            this.TBR_Scp049Pref.Location = new System.Drawing.Point(132, 57);
             this.TBR_Scp049Pref.Maximum = 5;
             this.TBR_Scp049Pref.Minimum = -5;
             this.TBR_Scp049Pref.Name = "TBR_Scp049Pref";
             this.TBR_Scp049Pref.Size = new System.Drawing.Size(164, 45);
-            this.TBR_Scp049Pref.TabIndex = 8;
+            this.TBR_Scp049Pref.TabIndex = 86;
             // 
             // BTN_SaveSettings
             // 
-            this.BTN_SaveSettings.Location = new System.Drawing.Point(259, 343);
+            this.BTN_SaveSettings.Location = new System.Drawing.Point(259, 344);
             this.BTN_SaveSettings.Name = "BTN_SaveSettings";
             this.BTN_SaveSettings.Size = new System.Drawing.Size(116, 30);
-            this.BTN_SaveSettings.TabIndex = 1;
+            this.BTN_SaveSettings.TabIndex = 98;
             this.BTN_SaveSettings.Text = "Save Settings";
             this.BTN_SaveSettings.UseVisualStyleBackColor = true;
             this.BTN_SaveSettings.Click += new System.EventHandler(this.BTN_SaveSettings_Click);
-            // 
-            // LBL_SpawnPrefNote
-            // 
-            this.LBL_SpawnPrefNote.AutoSize = true;
-            this.LBL_SpawnPrefNote.Location = new System.Drawing.Point(169, 243);
-            this.LBL_SpawnPrefNote.Name = "LBL_SpawnPrefNote";
-            this.LBL_SpawnPrefNote.Size = new System.Drawing.Size(292, 15);
-            this.LBL_SpawnPrefNote.TabIndex = 20;
-            this.LBL_SpawnPrefNote.Text = "Slider: Left = Less Preference, Right = More Preference";
             // 
             // SCPSLSC
             // 
@@ -1392,7 +1392,6 @@
         private TabControl TCTRL_GameSettings;
         private TabPage TPG_Video;
         private TabPage TPG_Audio;
-        private TabPage TPG_Controls;
         private TabPage TPG_Gameplay;
         private Button BTN_SaveSettings;
         private ComboBox CBX_VolumetricLights;
@@ -1480,86 +1479,6 @@
         private Label LBL_DisplaySteamProfile;
         private ComboBox CBX_Language;
         private Label LBL_Language;
-        private TabControl TCTRL_Controls;
-        private TabPage TPG_Movement;
-        private TabPage TPG_GameplayControls;
-        private TabPage TPG_Weapons;
-        private TabPage TPG_Hotkeys;
-        private TabPage TPG_Comms;
-        private TabPage TPG_Scp079;
-        private TabPage TPG_System;
-        private TextBox textBox7;
-        private Label label7;
-        private TextBox textBox6;
-        private Label label6;
-        private TextBox textBox5;
-        private Label label5;
-        private TextBox textBox4;
-        private Label label4;
-        private TextBox TXT_Sneak;
-        private Label LBL_Sneak;
-        private TextBox TXT_Run;
-        private Label LBL_Run;
-        private TextBox TXT_Jump;
-        private Label LBL_Jump;
-        private TextBox textBox14;
-        private Label label14;
-        private TextBox textBox15;
-        private Label label15;
-        private TextBox textBox16;
-        private Label label16;
-        private TextBox textBox17;
-        private Label label17;
-        private TextBox textBox18;
-        private Label label18;
-        private TextBox textBox19;
-        private Label label19;
-        private TextBox textBox20;
-        private Label label20;
-        private TextBox textBox21;
-        private Label label21;
-        private TextBox textBox22;
-        private Label label22;
-        private TextBox textBox23;
-        private Label label23;
-        private TextBox textBox24;
-        private Label label24;
-        private TextBox textBox25;
-        private Label label25;
-        private TextBox textBox26;
-        private Label label26;
-        private TextBox textBox27;
-        private Label label27;
-        private TextBox textBox28;
-        private Label label28;
-        private TextBox textBox29;
-        private Label label29;
-        private TextBox textBox30;
-        private Label label30;
-        private TextBox textBox31;
-        private Label label31;
-        private TextBox textBox32;
-        private Label label32;
-        private TextBox textBox33;
-        private Label label33;
-        private TextBox textBox34;
-        private Label label34;
-        private TextBox textBox35;
-        private Label label35;
-        private TextBox textBox36;
-        private Label label36;
-        private TextBox textBox37;
-        private Label label37;
-        private TextBox textBox8;
-        private Label label8;
-        private TextBox textBox9;
-        private Label label9;
-        private TextBox textBox10;
-        private Label label10;
-        private TextBox textBox11;
-        private Label label11;
-        private TextBox textBox12;
-        private Label label12;
         private TabPage TPG_SpawnPreferences;
         private Label LBL_Scp939Pref;
         private Label LBL_Scp173Pref;

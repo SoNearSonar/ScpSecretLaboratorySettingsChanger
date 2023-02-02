@@ -4,8 +4,8 @@ namespace ScpSecretLaboratorySettingsChanger.Helpers
 {
     public static class RegistryReaderHelper
     {
-        public static Dictionary<string, object> RegistryKeys = new Dictionary<string, object>();
-        public static string FileLocation = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "SCP Secret Laboratory", "registry.txt");
+        private static readonly Dictionary<string, object> RegistryKeys = new Dictionary<string, object>();
+        private static readonly string FileLocation = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "SCP Secret Laboratory", "registry.txt");
 
         public static void ReadAllRegistryKeys()
         {
@@ -25,7 +25,7 @@ namespace ScpSecretLaboratorySettingsChanger.Helpers
             }
         }
 
-        public static void WriteAllRegistryKeys()
+        public static bool WriteAllRegistryKeys()
         {
             string[] keys = new string[RegistryKeys.Count];
             int index = 0;
@@ -34,7 +34,23 @@ namespace ScpSecretLaboratorySettingsChanger.Helpers
                 keys[index] = pair.Key + pair.Value;
                 index++;
             }
-            File.WriteAllLines(FileLocation, keys);
+
+            if (File.Exists(FileLocation))
+            {
+                try
+                {
+                    File.WriteAllLines(FileLocation, keys);
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public static void SaveRegistryKeyValue(string key, object value)

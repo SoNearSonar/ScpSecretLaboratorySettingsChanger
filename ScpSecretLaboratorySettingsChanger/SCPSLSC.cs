@@ -105,7 +105,15 @@ namespace ScpSecretLaboratorySettingsChanger
             RegistryReaderHelper.SaveRegistryKeyValue("07SpawnPreference_Role_0::-%(|::", TBR_Scp173Pref.Value);
             RegistryReaderHelper.SaveRegistryKeyValue("07SpawnPreference_Role_16::-%(|::", TBR_Scp939Pref.Value);
 
-            RegistryReaderHelper.WriteAllRegistryKeys();
+            bool saveSuccessful = RegistryReaderHelper.WriteAllRegistryKeys();
+            if (saveSuccessful)
+            {
+                MessageBox.Show("Settings have been saved", "Save successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("There was a problem with saving the settings", "Save failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void LoadSettings()
